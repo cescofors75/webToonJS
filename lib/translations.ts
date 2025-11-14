@@ -89,6 +89,50 @@ export const translations = {
           f6: 'Operaciones matriciales y transformaciones',
           f7: '100% cobertura de tests con 75 tests comprehensivos'
         }
+      },
+      gettingStarted: {
+        title: 'Comenzando',
+        subtitle: 'Aprende cómo instalar y usar ToonJS en tu proyecto',
+        installation: 'Instalación',
+        installDesc: 'Instala ToonJS usando npm o yarn:',
+        basicUsage: 'Uso Básico',
+        basicDesc: 'Importa Toon y crea un dataset:',
+        filtering: 'Filtrado',
+        filteringDesc: 'Filtra filas basado en condiciones:',
+        chaining: 'Encadenamiento',
+        chainingDesc: 'Encadena múltiples operaciones:',
+        statistics: 'Estadísticas',
+        statsDesc: 'Calcula estadísticas sobre tus datos:',
+        timeSeries: 'Series Temporales',
+        timeSeriesDesc: 'Analiza datos de series temporales:',
+        exporting: 'Exportando',
+        exportDesc: 'Exporta a diferentes formatos:'
+      },
+      apiReference: {
+        title: 'Referencia de API',
+        subtitle: 'Documentación completa de todos los métodos de ToonJS',
+        filtering: 'Métodos de Filtrado',
+        selection: 'Selección de Datos',
+        statistics: 'Operaciones Estadísticas',
+        timeSeries: 'Análisis de Series Temporales',
+        transformation: 'Transformación de Datos',
+        matrix: 'Operaciones Matriciales',
+        export: 'Exportación de Datos',
+        methodName: 'Nombre',
+        methodDesc: 'Descripción',
+        methodReturn: 'Retorna'
+      },
+      methods: {
+        title: 'Guía de Métodos',
+        subtitle: 'Ejemplos detallados para cada categoría de métodos',
+        filteringTitle: 'Filtrado y Selección',
+        filteringDesc: 'Métodos para filtrar y seleccionar datos',
+        statsTitle: 'Operaciones Estadísticas',
+        statsDesc: 'Calcular estadísticas sobre tus datos',
+        timeSeriesTitle: 'Series Temporales',
+        timeSeriesDesc: 'Analizar datos temporales',
+        transformTitle: 'Transformaciones',
+        transformDesc: 'Transformar y remodelar datos'
       }
     },
     // Converter
@@ -203,6 +247,50 @@ export const translations = {
           f6: 'Operacions matricials i transformacions',
           f7: '100% cobertura de tests amb 75 tests comprehensius'
         }
+      },
+      gettingStarted: {
+        title: 'Començant',
+        subtitle: 'Aprèn com instal·lar i usar ToonJS al teu projecte',
+        installation: 'Instal·lació',
+        installDesc: 'Instal·la ToonJS usant npm o yarn:',
+        basicUsage: 'Ús Bàsic',
+        basicDesc: 'Importa Toon i crea un dataset:',
+        filtering: 'Filtratge',
+        filteringDesc: 'Filtra files basades en condicions:',
+        chaining: 'Encadenament',
+        chainingDesc: 'Encadena múltiples operacions:',
+        statistics: 'Estadístiques',
+        statsDesc: 'Calcula estadístiques sobre les teves dades:',
+        timeSeries: 'Sèries Temporals',
+        timeSeriesDesc: 'Analitza dades de sèries temporals:',
+        exporting: 'Exportant',
+        exportDesc: 'Exporta a diferents formats:'
+      },
+      apiReference: {
+        title: 'Referència d\'API',
+        subtitle: 'Documentació completa de tots els mètodes de ToonJS',
+        filtering: 'Mètodes de Filtratge',
+        selection: 'Selecció de Dades',
+        statistics: 'Operacions Estadístiques',
+        timeSeries: 'Anàlisi de Sèries Temporals',
+        transformation: 'Transformació de Dades',
+        matrix: 'Operacions Matricials',
+        export: 'Exportació de Dades',
+        methodName: 'Nom',
+        methodDesc: 'Descripció',
+        methodReturn: 'Retorna'
+      },
+      methods: {
+        title: 'Guia de Mètodes',
+        subtitle: 'Exemples detallats per cada categoria de mètodes',
+        filteringTitle: 'Filtratge i Selecció',
+        filteringDesc: 'Mètodes per filtrar i seleccionar dades',
+        statsTitle: 'Operacions Estadístiques',
+        statsDesc: 'Calcular estadístiques sobre les teves dades',
+        timeSeriesTitle: 'Sèries Temporals',
+        timeSeriesDesc: 'Analitzar dades temporals',
+        transformTitle: 'Transformacions',
+        transformDesc: 'Transformar i remodelar dades'
       }
     },
     // Converter
@@ -317,6 +405,50 @@ export const translations = {
           f6: 'Matrix operations and transformations',
           f7: '100% test coverage with 75 comprehensive tests'
         }
+      },
+      gettingStarted: {
+        title: 'Getting Started',
+        subtitle: 'Learn how to install and use ToonJS in your project',
+        installation: 'Installation',
+        installDesc: 'Install ToonJS using npm or yarn:',
+        basicUsage: 'Basic Usage',
+        basicDesc: 'Import Toon and create a dataset:',
+        filtering: 'Filtering',
+        filteringDesc: 'Filter rows based on conditions:',
+        chaining: 'Chaining',
+        chainingDesc: 'Chain multiple operations:',
+        statistics: 'Statistics',
+        statsDesc: 'Calculate statistics on your data:',
+        timeSeries: 'Time Series',
+        timeSeriesDesc: 'Analyze time series data:',
+        exporting: 'Exporting',
+        exportDesc: 'Export to different formats:'
+      },
+      apiReference: {
+        title: 'API Reference',
+        subtitle: 'Complete documentation of all ToonJS methods',
+        filtering: 'Filtering Methods',
+        selection: 'Data Selection',
+        statistics: 'Statistical Operations',
+        timeSeries: 'Time Series Analysis',
+        transformation: 'Data Transformation',
+        matrix: 'Matrix Operations',
+        export: 'Data Export',
+        methodName: 'Name',
+        methodDesc: 'Description',
+        methodReturn: 'Returns'
+      },
+      methods: {
+        title: 'Methods Guide',
+        subtitle: 'Detailed examples for each method category',
+        filteringTitle: 'Filtering and Selection',
+        filteringDesc: 'Methods to filter and select data',
+        statsTitle: 'Statistical Operations',
+        statsDesc: 'Calculate statistics on your data',
+        timeSeriesTitle: 'Time Series',
+        timeSeriesDesc: 'Analyze temporal data',
+        transformTitle: 'Transformations',
+        transformDesc: 'Transform and reshape data'
       }
     },
     // Converter
@@ -431,6 +563,50 @@ export const translations = {
           f6: 'Opérations matricielles et transformations',
           f7: '100% de couverture de tests avec 75 tests complets'
         }
+      },
+      gettingStarted: {
+        title: 'Démarrage',
+        subtitle: 'Apprenez comment installer et utiliser ToonJS dans votre projet',
+        installation: 'Installation',
+        installDesc: 'Installez ToonJS en utilisant npm ou yarn:',
+        basicUsage: 'Usage Basique',
+        basicDesc: 'Importez Toon et créez un dataset:',
+        filtering: 'Filtrage',
+        filteringDesc: 'Filtrez les lignes selon des conditions:',
+        chaining: 'Chaînage',
+        chainingDesc: 'Chaînez plusieurs opérations:',
+        statistics: 'Statistiques',
+        statsDesc: 'Calculez des statistiques sur vos données:',
+        timeSeries: 'Séries Temporelles',
+        timeSeriesDesc: 'Analysez des données de séries temporelles:',
+        exporting: 'Exportation',
+        exportDesc: 'Exportez vers différents formats:'
+      },
+      apiReference: {
+        title: 'Référence API',
+        subtitle: 'Documentation complète de toutes les méthodes ToonJS',
+        filtering: 'Méthodes de Filtrage',
+        selection: 'Sélection de Données',
+        statistics: 'Opérations Statistiques',
+        timeSeries: 'Analyse de Séries Temporelles',
+        transformation: 'Transformation de Données',
+        matrix: 'Opérations Matricielles',
+        export: 'Exportation de Données',
+        methodName: 'Nom',
+        methodDesc: 'Description',
+        methodReturn: 'Retourne'
+      },
+      methods: {
+        title: 'Guide des Méthodes',
+        subtitle: 'Exemples détaillés pour chaque catégorie de méthodes',
+        filteringTitle: 'Filtrage et Sélection',
+        filteringDesc: 'Méthodes pour filtrer et sélectionner les données',
+        statsTitle: 'Opérations Statistiques',
+        statsDesc: 'Calculer des statistiques sur vos données',
+        timeSeriesTitle: 'Séries Temporelles',
+        timeSeriesDesc: 'Analyser les données temporelles',
+        transformTitle: 'Transformations',
+        transformDesc: 'Transformer et remodeler les données'
       }
     },
     // Converter

@@ -1,15 +1,21 @@
+'use client'
+
+import { useI18n } from '@/components/I18nProvider'
+
 export default function GettingStartedPage() {
+  const { t } = useI18n()
+  
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-4">Getting Started</h1>
+      <h1 className="text-4xl font-bold mb-4">{t.docs.gettingStarted.title}</h1>
       
-      <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-        Learn how to install and use ToonJS in your project in just a few minutes.
+      <p className="text-lg text-gray-600 mb-8">
+        {t.docs.gettingStarted.subtitle}
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Installation</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.installation}</h2>
       
-      <p className="mb-4">Install ToonJS via npm or yarn:</p>
+      <p className="mb-4">{t.docs.gettingStarted.installDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg mb-6">
         <code>npm install @cescofors/toonjs</code>
@@ -21,9 +27,9 @@ export default function GettingStartedPage() {
         <code>yarn add @cescofors/toonjs</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Basic Usage</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.basicUsage}</h2>
       
-      <p className="mb-4">Import and create your first dataset:</p>
+      <p className="mb-4">{t.docs.gettingStarted.basicDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6">
         <code>{`import { ToonFactory } from '@cescofors/toonjs';
@@ -40,7 +46,9 @@ const restaurantes = ToonFactory.from(\`
 console.log(restaurantes.all());`}</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Filtering Data</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.filtering}</h2>
+      
+      <p className="mb-4">{t.docs.gettingStarted.filteringDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6">
         <code>{`// Filter by condition
@@ -52,7 +60,9 @@ console.log(topRated);
 // Returns restaurants with rating >= 4.7`}</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Chaining Operations</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.chaining}</h2>
+      
+      <p className="mb-4">{t.docs.gettingStarted.chainingDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6">
         <code>{`// Chain multiple operations
@@ -67,7 +77,9 @@ console.log(result);
 // Top 5 Barcelona restaurants by rating`}</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Statistical Analysis</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.statistics}</h2>
+      
+      <p className="mb-4">{t.docs.gettingStarted.statsDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6">
         <code>{`// Calculate statistics
@@ -81,7 +93,9 @@ const correlation = restaurantes.correlation('precio', 'calificacion');
 console.log(correlation); // Correlation coefficient`}</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Working with Time Series</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.timeSeries}</h2>
+      
+      <p className="mb-4">{t.docs.gettingStarted.timeSeriesDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6">
         <code>{`const ventas = ToonFactory.from(\`
@@ -102,7 +116,9 @@ const withPctChange = withMA.pctChange('ingresos');
 console.log(withPctChange.all());`}</code>
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Exporting Data</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{t.docs.gettingStarted.exporting}</h2>
+      
+      <p className="mb-4">{t.docs.gettingStarted.exportDesc}</p>
       
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-8">
         <code>{`// Export to different formats
@@ -114,10 +130,10 @@ const toonData = restaurantes.toToon();
 console.log(restaurantes.toTable());`}</code>
       </pre>
 
-      <div className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+      <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
         <p className="text-sm">
           <strong>💡 Tip:</strong> Check out the{' '}
-          <a href="/playground" className="text-blue-600 hover:underline">
+          <a href="/playground" className="text-emerald-600 hover:underline">
             Playground
           </a>{' '}
           to try ToonJS interactively in your browser.

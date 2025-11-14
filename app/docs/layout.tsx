@@ -5,25 +5,14 @@ const sidebarItems = [
     title: 'Getting Started',
     items: [
       { title: 'Introduction', href: '/docs' },
-      { title: 'Installation', href: '/docs/installation' },
-      { title: 'Quick Start', href: '/docs/getting-started' },
+      { title: 'Installation & Quick Start', href: '/docs/getting-started' },
     ]
   },
   {
-    title: 'Core Concepts',
+    title: 'Documentation',
     items: [
-      { title: 'TOON Format', href: '/docs/toon-format' },
-      { title: 'API Overview', href: '/docs/api-overview' },
-    ]
-  },
-  {
-    title: 'API Reference',
-    items: [
-      { title: 'Data Access', href: '/docs/api/data-access' },
-      { title: 'Filtering', href: '/docs/api/filtering' },
-      { title: 'Transformation', href: '/docs/api/transformation' },
-      { title: 'Aggregation', href: '/docs/api/aggregation' },
-      { title: 'Statistics', href: '/docs/api/statistics' },
+      { title: 'API Reference', href: '/docs/api-reference' },
+      { title: 'Methods Guide', href: '/docs/methods' },
     ]
   }
 ]
