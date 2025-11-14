@@ -28,7 +28,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
     <div className="container mx-auto px-4 py-16">
       <article className="max-w-3xl mx-auto">
         <header className="mb-8">
-          <h1 className="text-5xl font-bold mb-4">{post.title[language]}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">{post.title[language]}</h1>
           <div className="flex items-center gap-4 text-gray-600">
             <span>{post.date}</span>
             <span>•</span>
