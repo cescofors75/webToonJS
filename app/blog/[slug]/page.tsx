@@ -6,8 +6,13 @@ export function generateStaticParams() {
   return Object.keys(allBlogPosts).map((slug) => ({ slug }))
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = allBlogPosts[params.slug as keyof typeof allBlogPosts]
+export default async function BlogPost({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> 
+}) {
+  const { slug } = await params
+  const post = allBlogPosts[slug as keyof typeof allBlogPosts]
 
   if (!post) {
     notFound()
