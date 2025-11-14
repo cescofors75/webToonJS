@@ -39,7 +39,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Une bibliothèque TypeScript haute performance pour la manipulation de données tabulaires optimisée pour les interactions LLM.'
     },
     date: '2025-11-09',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '5',
     tags: ['announcement', 'getting-started']
   },
@@ -58,7 +58,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Comment le format TOON réduit l\'utilisation de tokens avec les LLMs tout en maintenant la lisibilité.'
     },
     date: '2025-11-09',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '7',
     tags: ['performance', 'llm', 'optimization']
   },
@@ -77,7 +77,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Découvrez comment les techniques classiques des moteurs de jeu rendent ToonJS jusqu\'à 3x plus rapide.'
     },
     date: '2025-11-09',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '10',
     tags: ['performance', 'optimization', 'technical']
   },
@@ -96,7 +96,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Apporter la puissance de la manipulation de données type Pandas à l\'écosystème JavaScript.'
     },
     date: '2025-11-10',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '6',
     tags: ['comparison', 'data-science']
   },
@@ -115,7 +115,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Exemples pratiques d\'utilisation de ToonJS pour l\'analyse commerciale, des données de ventes aux insights clients.'
     },
     date: '2025-11-10',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '8',
     tags: ['tutorial', 'analytics', 'business']
   },
@@ -134,7 +134,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Maîtrisez les opérations de séries temporelles avec ToonJS: fenêtres glissantes, lag, lead et calculs de variation.'
     },
     date: '2025-11-10',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '9',
     tags: ['tutorial', 'timeseries', 'advanced']
   },
@@ -153,7 +153,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Plongée profonde dans la corrélation, la covariance, l\'écart-type et autres opérations statistiques.'
     },
     date: '2025-11-16',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '12',
     tags: ['statistics', 'tutorial', 'data-science']
   },
@@ -172,7 +172,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Apprenez les modèles les plus utiles pour nettoyer, filtrer et transformer vos données efficacement.'
     },
     date: '2025-11-16',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '7',
     tags: ['tutorial', 'patterns', 'best-practices']
   },
@@ -191,7 +191,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Comment utiliser ToonJS avec ChatGPT, Claude et autres LLMs pour une gestion efficace des données.'
     },
     date: '2025-11-16',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '11',
     tags: ['llm', 'ai', 'integration', 'tutorial']
   },
@@ -210,7 +210,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Comparaison complète des performances avec d\'autres bibliothèques de manipulation de données JavaScript.'
     },
     date: '2025-11-17',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '6',
     tags: ['performance', 'benchmarks', 'comparison']
   },
@@ -229,7 +229,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Nouvelles fonctionnalités passionnantes dans la version 2.0: support streaming, optimisations WebAssembly, etc.'
     },
     date: '2025-11-17',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '5',
     tags: ['announcement', 'roadmap', 'future']
   },
@@ -248,7 +248,7 @@ const blogPosts: BlogPost[] = [
       fr: 'Créez des visualisations de données en temps réel avec ToonJS en utilisant React, Vue et JavaScript vanilla.'
     },
     date: '2025-11-17',
-    author: 'Francesc Fors',
+    author: 'Cesco Fors',
     readTime: '13',
     tags: ['tutorial', 'visualization', 'dashboard', 'react']
   }
