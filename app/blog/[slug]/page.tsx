@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { allBlogPosts } from '@/lib/blog-posts'
-import BlogPostClient from './BlogPostClient'
+import BlogPostClient from '@/app/blog/[slug]/BlogPostClient'
 
 export function generateStaticParams() {
   return Object.keys(allBlogPosts).map((slug) => ({ slug }))
