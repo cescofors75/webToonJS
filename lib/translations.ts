@@ -13,7 +13,7 @@ export const translations = {
     home: {
       badge: 'Hasta 3.5x Más Rápido que Operaciones Manuales',
       hero: 'Librería TypeScript de Alto Rendimiento',
-      subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Hasta 3x más rápido.',
+      subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Hasta 3.5x más rápido.',
       cta: {
         started: 'Comenzar',
         docs: 'Ver Documentación'
@@ -41,21 +41,46 @@ export const translations = {
         }
       },
       methods: {
-        title: 'Métodos Más Populares',
-        subtitle: 'Explora los métodos más potentes y utilizados de ToonJS con ejemplos prácticos',
-        viewAll: 'Ver todos los métodos',
-        m1: { desc: 'Filtra y transforma datos en una sola cadena fluida' },
-        m2: { desc: 'Agrupa datos por categoría y calcula estadísticas' },
-        m3: { desc: 'Calcula la correlación entre dos variables numéricas' },
-        m4: { desc: 'Calcula medias móviles para análisis de series temporales' },
-        m5: { desc: 'Encuentra todas las filas que cumplen una condición' },
-        m6: { desc: 'Cuenta frecuencias por categoría automáticamente' }
+        title: 'Métodos TOP del Ranking',
+        subtitle: 'Los métodos más esenciales y potentes de ToonJS organizados por nivel de uso',
+        viewAll: 'Ver todos los 76 métodos',
+        m1: {
+          title: 'filter()',
+          level: 'Nivel 1: Esencial',
+          desc: 'Filtrado básico de filas - uso diario'
+        },
+        m2: {
+          title: 'groupBy()',
+          level: 'Nivel 1: Esencial',
+          desc: 'Agrupación y agregación por categorías'
+        },
+        m3: {
+          title: 'merge()',
+          level: 'Nivel 1: Esencial',
+          desc: 'Combina datasets con 5 tipos de join (inner, left, right, outer, cross)'
+        },
+        m4: {
+          title: 'describe()',
+          level: 'Nivel 2: Análisis',
+          desc: 'Estadísticas completas del dataset en un solo método'
+        },
+        m5: {
+          title: 'normalize()',
+          level: 'Nivel 4: Especializado',
+          desc: 'Normalización de datos - 1.68x más rápido que alternativas'
+        },
+        m6: {
+          title: 'correlation()',
+          level: 'Nivel 4: Especializado',
+          desc: 'Correlación entre variables - 3.51x más rápido'
+        }
       },
       stats: {
         methods: 'Métodos Optimizados',
         tests: 'Tests Pasando',
         faster: 'Más Rápido',
-        downloads: 'Descargas/mes'
+        downloads: 'Descargas/mes',
+        coverage: 'Cobertura'
       }
     },
     // Footer
@@ -188,7 +213,7 @@ export const translations = {
     home: {
       badge: 'Fins a 3.5x Més Ràpid que Operacions Manuals',
       hero: 'Llibreria TypeScript d\'Alt Rendiment',
-      subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Fins a 3x més ràpid.',
+      subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Fins a 3.5x més ràpid.',
       cta: {
         started: 'Començar',
         docs: 'Veure Documentació'
@@ -216,21 +241,46 @@ export const translations = {
         }
       },
       methods: {
-        title: 'Mètodes Més Populars',
-        subtitle: 'Explora els mètodes més potents i utilitzats de ToonJS amb exemples pràctics',
-        viewAll: 'Veure tots els mètodes',
-        m1: { desc: 'Filtra i transforma dades en una sola cadena fluïda' },
-        m2: { desc: 'Agrupa dades per categoria i calcula estadístiques' },
-        m3: { desc: 'Calcula la correlació entre dues variables numèriques' },
-        m4: { desc: 'Calcula mitjanes mòbils per anàlisi de sèries temporals' },
-        m5: { desc: 'Troba totes les files que compleixen una condició' },
-        m6: { desc: 'Compta freqüències per categoria automàticament' }
+        title: 'Mètodes TOP del Rànquing',
+        subtitle: 'Els mètodes més essencials i potents de ToonJS organitzats per nivell d\'ús',
+        viewAll: 'Veure tots els 76 mètodes',
+        m1: {
+          title: 'filter()',
+          level: 'Nivell 1: Essencial',
+          desc: 'Filtratge bàsic de files - ús diari'
+        },
+        m2: {
+          title: 'groupBy()',
+          level: 'Nivell 1: Essencial',
+          desc: 'Agrupació i agregació per categories'
+        },
+        m3: {
+          title: 'merge()',
+          level: 'Nivell 1: Essencial',
+          desc: 'Combina datasets amb 5 tipus de join (inner, left, right, outer, cross)'
+        },
+        m4: {
+          title: 'describe()',
+          level: 'Nivell 2: Anàlisi',
+          desc: 'Estadístiques completes del dataset en un sol mètode'
+        },
+        m5: {
+          title: 'normalize()',
+          level: 'Nivell 4: Especialitzat',
+          desc: 'Normalització de dades - 1.68x més ràpid que alternatives'
+        },
+        m6: {
+          title: 'correlation()',
+          level: 'Nivell 4: Especialitzat',
+          desc: 'Correlació entre variables - 3.51x més ràpid'
+        }
       },
       stats: {
         methods: 'Mètodes Optimitzats',
         tests: 'Tests Passant',
         faster: 'Més Ràpid',
-        downloads: 'Descàrregues/mes'
+        downloads: 'Descàrregues/mes',
+        coverage: 'Cobertura'
       }
     },
     // Footer
@@ -363,7 +413,7 @@ export const translations = {
     home: {
       badge: 'Up to 3.5x Faster than Manual Operations',
       hero: 'High-Performance TypeScript Library',
-      subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Up to 3x faster.',
+      subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Up to 3.5x faster.',
       cta: {
         started: 'Get Started',
         docs: 'View Documentation'
@@ -391,21 +441,46 @@ export const translations = {
         }
       },
       methods: {
-        title: 'Most Popular Methods',
-        subtitle: 'Explore the most powerful and widely used ToonJS methods with practical examples',
-        viewAll: 'View all methods',
-        m1: { desc: 'Filter and transform data in a single fluent chain' },
-        m2: { desc: 'Group data by category and calculate statistics' },
-        m3: { desc: 'Calculate correlation between two numeric variables' },
-        m4: { desc: 'Calculate moving averages for time series analysis' },
-        m5: { desc: 'Find all rows matching a condition' },
-        m6: { desc: 'Count frequencies by category automatically' }
+        title: 'TOP Ranked Methods',
+        subtitle: 'Most essential and powerful ToonJS methods organized by usage level',
+        viewAll: 'View all 76 methods',
+        m1: {
+          title: 'filter()',
+          level: 'Level 1: Essential',
+          desc: 'Basic row filtering - daily use'
+        },
+        m2: {
+          title: 'groupBy()',
+          level: 'Level 1: Essential',
+          desc: 'Group and aggregate by categories'
+        },
+        m3: {
+          title: 'merge()',
+          level: 'Level 1: Essential',
+          desc: 'Combine datasets with 5 join types (inner, left, right, outer, cross)'
+        },
+        m4: {
+          title: 'describe()',
+          level: 'Level 2: Analysis',
+          desc: 'Complete dataset statistics in a single method'
+        },
+        m5: {
+          title: 'normalize()',
+          level: 'Level 4: Specialized',
+          desc: 'Data normalization - 1.68x faster than alternatives'
+        },
+        m6: {
+          title: 'correlation()',
+          level: 'Level 4: Specialized',
+          desc: 'Variable correlation - 3.51x faster'
+        }
       },
       stats: {
         methods: 'Optimized Methods',
         tests: 'Tests Passing',
         faster: 'Faster',
-        downloads: 'Downloads/month'
+        downloads: 'Downloads/month',
+        coverage: 'Coverage'
       }
     },
     // Footer
@@ -538,7 +613,7 @@ export const translations = {
     home: {
       badge: 'Jusqu\'à 3.5x Plus Rapide que les Opérations Manuelles',
       hero: 'Bibliothèque TypeScript Haute Performance',
-      subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Jusqu\'à 3x plus rapide.',
+      subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Jusqu\'à 3.5x plus rapide.',
       cta: {
         started: 'Commencer',
         docs: 'Voir la Documentation'
@@ -566,21 +641,46 @@ export const translations = {
         }
       },
       methods: {
-        title: 'M\u00e9thodes Les Plus Populaires',
-        subtitle: 'Explorez les m\u00e9thodes ToonJS les plus puissantes et utilis\u00e9es avec des exemples pratiques',
-        viewAll: 'Voir toutes les m\u00e9thodes',
-        m1: { desc: 'Filtrer et transformer les donn\u00e9es en une seule cha\u00eene fluide' },
-        m2: { desc: 'Grouper les donn\u00e9es par cat\u00e9gorie et calculer des statistiques' },
-        m3: { desc: 'Calculer la corr\u00e9lation entre deux variables num\u00e9riques' },
-        m4: { desc: 'Calculer des moyennes mobiles pour l\'analyse de s\u00e9ries temporelles' },
-        m5: { desc: 'Trouver toutes les lignes correspondant \u00e0 une condition' },
-        m6: { desc: 'Compter automatiquement les fr\u00e9quences par cat\u00e9gorie' }
+        title: 'M\u00e9thodes TOP du Classement',
+        subtitle: 'Les m\u00e9thodes les plus essentielles et puissantes de ToonJS organis\u00e9es par niveau d\'utilisation',
+        viewAll: 'Voir toutes les 76 m\u00e9thodes',
+        m1: {
+          title: 'filter()',
+          level: 'Niveau 1: Essentiel',
+          desc: 'Filtrage basique des lignes - usage quotidien'
+        },
+        m2: {
+          title: 'groupBy()',
+          level: 'Niveau 1: Essentiel',
+          desc: 'Groupement et agr\u00e9gation par cat\u00e9gories'
+        },
+        m3: {
+          title: 'merge()',
+          level: 'Niveau 1: Essentiel',
+          desc: 'Combine datasets avec 5 types de join (inner, left, right, outer, cross)'
+        },
+        m4: {
+          title: 'describe()',
+          level: 'Niveau 2: Analyse',
+          desc: 'Statistiques compl\u00e8tes du dataset en une seule m\u00e9thode'
+        },
+        m5: {
+          title: 'normalize()',
+          level: 'Niveau 4: Sp\u00e9cialis\u00e9',
+          desc: 'Normalisation des donn\u00e9es - 1.68x plus rapide que les alternatives'
+        },
+        m6: {
+          title: 'correlation()',
+          level: 'Niveau 4: Sp\u00e9cialis\u00e9',
+          desc: 'Corr\u00e9lation entre variables - 3.51x plus rapide'
+        }
       },
       stats: {
         methods: 'Méthodes Optimisées',
         tests: 'Tests Réussis',
         faster: 'Plus Rapide',
-        downloads: 'Téléchargements/mois'
+        downloads: 'Téléchargements/mois',
+        coverage: 'Couverture'
       }
     },
     // Footer

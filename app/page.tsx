@@ -46,20 +46,24 @@ export default function Home() {
       {/* Stats */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800/50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">64+</div>
+              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">76</div>
               <div className="text-gray-600 dark:text-gray-400">{t.home.stats.methods}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">75</div>
+              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">102</div>
               <div className="text-gray-600 dark:text-gray-400">{t.home.stats.tests}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">3x</div>
+              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">100%</div>
+              <div className="text-gray-600 dark:text-gray-400">{t.home.stats.coverage}</div>
+            </div>
+            <div>
+              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">3.5x</div>
               <div className="text-gray-600 dark:text-gray-400">{t.home.stats.faster}</div>
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
               <NpmDownloads />
               <div className="text-gray-600 dark:text-gray-400 mt-2">{t.home.stats.downloads}</div>
             </div>
@@ -76,19 +80,24 @@ export default function Home() {
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            {/* Method 1: filter + map */}
+            {/* Method 1: filter */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">filter() + map()</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m1.title}</h3>
+                <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded">{t.home.methods.m1.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m1.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
-                <code className="text-gray-800 dark:text-gray-300">{`data.filter(r => r.age > 25)
-    .map(r => ({ ...r, senior: true }))`}</code>
+                <code className="text-gray-800 dark:text-gray-300">{`data.filter(r => r.age > 25)`}</code>
               </pre>
             </div>
 
             {/* Method 2: groupBy */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">groupBy()</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m2.title}</h3>
+                <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded">{t.home.methods.m2.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m2.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
                 <code className="text-gray-800 dark:text-gray-300">{`data.groupBy('category', 'sum', 'sales')
@@ -96,43 +105,53 @@ export default function Home() {
               </pre>
             </div>
 
-            {/* Method 3: correlation */}
+            {/* Method 3: merge */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">correlation()</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m3.title}</h3>
+                <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded">{t.home.methods.m3.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m3.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
-                <code className="text-gray-800 dark:text-gray-300">{`const corr = data.correlation('price', 'sales')
-// 0.87 (strong positive correlation)`}</code>
+                <code className="text-gray-800 dark:text-gray-300">{`users.merge(orders, 'userId', 'inner')`}</code>
               </pre>
             </div>
 
-            {/* Method 4: rolling */}
+            {/* Method 4: describe */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">rolling()</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m4.title}</h3>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">{t.home.methods.m4.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m4.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
-                <code className="text-gray-800 dark:text-gray-300">{`data.rolling('price', 7, 'avg')
-// Moving average of last 7 days`}</code>
+                <code className="text-gray-800 dark:text-gray-300">{`data.describe()
+// { count, mean, std, min, max, ... }`}</code>
               </pre>
             </div>
 
-            {/* Method 5: findAll */}
+            {/* Method 5: normalize */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">findAll() <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 px-2 py-1 rounded">NEW</span></h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m5.title}</h3>
+                <span className="text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-1 rounded">{t.home.methods.m5.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m5.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
-                <code className="text-gray-800 dark:text-gray-300">{`const matches = data.findAll(r => r.stock < 10)
-// All products with low stock`}</code>
+                <code className="text-gray-800 dark:text-gray-300">{`data.normalize('minmax')`}</code>
               </pre>
             </div>
 
-            {/* Method 6: countBy */}
+            {/* Method 6: correlation */}
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2 font-mono">countBy() <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 px-2 py-1 rounded">NEW</span></h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400 font-mono">{t.home.methods.m6.title}</h3>
+                <span className="text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-1 rounded">{t.home.methods.m6.level}</span>
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4">{t.home.methods.m6.desc}</p>
               <pre className="bg-gray-50 dark:bg-gray-900 rounded p-4 overflow-x-auto text-sm">
-                <code className="text-gray-800 dark:text-gray-300">{`data.countBy('status')
-// { active: 42, pending: 15, closed: 8 }`}</code>
+                <code className="text-gray-800 dark:text-gray-300">{`const corr = data.correlation('price', 'sales')
+// 0.87`}</code>
               </pre>
             </div>
           </div>
