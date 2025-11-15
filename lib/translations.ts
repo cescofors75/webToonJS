@@ -11,7 +11,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Desarrollador Senior Full Stack',
+      badge: 'Hasta 3.5x Más Rápido que Operaciones Manuales',
       hero: 'Librería TypeScript de Alto Rendimiento',
       subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Hasta 3x más rápido.',
       cta: {
@@ -182,7 +182,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Desenvolupador Senior Full Stack',
+      badge: 'Fins a 3.5x Més Ràpid que Operacions Manuals',
       hero: 'Llibreria TypeScript d\'Alt Rendiment',
       subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Fins a 3x més ràpid.',
       cta: {
@@ -353,7 +353,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Senior Full Stack Developer',
+      badge: 'Up to 3.5x Faster than Manual Operations',
       hero: 'High-Performance TypeScript Library',
       subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Up to 3x faster.',
       cta: {
@@ -524,7 +524,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Développeur Senior Full Stack',
+      badge: 'Jusqu\'à 3.5x Plus Rapide que les Opérations Manuelles',
       hero: 'Bibliothèque TypeScript Haute Performance',
       subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Jusqu\'à 3x plus rapide.',
       cta: {
