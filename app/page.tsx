@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, Code2, Zap, Shield, Cpu } from 'lucide-react'
+import { ArrowRight, Code2, Zap, Shield, Cpu, Leaf } from 'lucide-react'
 import { useI18n } from '@/components/I18nProvider'
 import NpmDownloads from '@/components/NpmDownloads'
 
@@ -152,7 +152,7 @@ export default function Home() {
       {/* Features */}
       <section className="py-20 px-6 bg-gray-50 dark:bg-gray-800/50">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white dark:bg-gray-800">
               <Zap className="w-12 h-12 text-emerald-500 dark:text-emerald-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{t.home.features.performance.title}</h3>
@@ -172,6 +172,11 @@ export default function Home() {
               <Cpu className="w-12 h-12 text-emerald-500 dark:text-emerald-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{t.home.features.llm.title}</h3>
               <p className="text-gray-600 dark:text-gray-400">{t.home.features.llm.desc}</p>
+            </div>
+            <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white dark:bg-gray-800">
+              <Leaf className="w-12 h-12 text-emerald-500 dark:text-emerald-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{t.home.features.eco.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400">{t.home.features.eco.desc}</p>
             </div>
           </div>
         </div>

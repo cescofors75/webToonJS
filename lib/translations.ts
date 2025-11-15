@@ -34,6 +34,10 @@ export const translations = {
         llm: {
           title: '🤖 Optimizado para LLMs',
           desc: 'Formato TOON diseñado para uso eficiente de tokens'
+        },
+        eco: {
+          title: '🌱 Sostenible',
+          desc: 'Menos CPU, menos energía, menor huella de carbono'
         }
       },
       methods: {
@@ -205,6 +209,10 @@ export const translations = {
         llm: {
           title: '🤖 Optimitzat per LLMs',
           desc: 'Format TOON dissenyat per ús eficient de tokens'
+        },
+        eco: {
+          title: '🌱 Sostenible',
+          desc: 'Menys CPU, menys energia, menor petjada de carboni'
         }
       },
       methods: {
@@ -376,6 +384,10 @@ export const translations = {
         llm: {
           title: '🤖 LLM-Optimized',
           desc: 'TOON format designed for efficient token usage'
+        },
+        eco: {
+          title: '🌱 Sustainable',
+          desc: 'Less CPU, less energy, lower carbon footprint'
         }
       },
       methods: {
@@ -547,6 +559,10 @@ export const translations = {
         llm: {
           title: '🤖 Optimis\u00e9 pour LLMs',
           desc: 'Format TOON con\u00e7u pour usage efficace des tokens'
+        },
+        eco: {
+          title: '🌱 Durable',
+          desc: 'Moins de CPU, moins d\'énergie, empreinte carbone réduite'
         }
       },
       methods: {
