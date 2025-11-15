@@ -67,26 +67,108 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features */}
+      {/* Popular Methods */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">{t.home.methods.title}</h2>
+          <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+            {t.home.methods.subtitle}
+          </p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {/* Method 1: filter + map */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">filter() + map()</h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m1.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`data.filter(r => r.age > 25)
+    .map(r => ({ ...r, senior: true }))`}</code>
+              </pre>
+            </div>
+
+            {/* Method 2: groupBy */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">groupBy()</h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m2.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`data.groupBy('category', 'sum', 'sales')
+// { electronics: 15000, books: 8500 }`}</code>
+              </pre>
+            </div>
+
+            {/* Method 3: correlation */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">correlation()</h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m3.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`const corr = data.correlation('price', 'sales')
+// 0.87 (strong positive correlation)`}</code>
+              </pre>
+            </div>
+
+            {/* Method 4: rolling */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">rolling()</h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m4.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`data.rolling('price', 7, 'avg')
+// Moving average of last 7 days`}</code>
+              </pre>
+            </div>
+
+            {/* Method 5: findAll */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">findAll() <span className="text-xs bg-emerald-100 px-2 py-1 rounded">NEW</span></h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m5.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`const matches = data.findAll(r => r.stock < 10)
+// All products with low stock`}</code>
+              </pre>
+            </div>
+
+            {/* Method 6: countBy */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-2 font-mono">countBy() <span className="text-xs bg-emerald-100 px-2 py-1 rounded">NEW</span></h3>
+              <p className="text-gray-600 mb-4">{t.home.methods.m6.desc}</p>
+              <pre className="bg-gray-50 rounded p-4 overflow-x-auto text-sm">
+                <code className="text-gray-800">{`data.countBy('status')
+// { active: 42, pending: 15, closed: 8 }`}</code>
+              </pre>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link 
+              href="/docs/api-reference"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-all"
+            >
+              {t.home.methods.viewAll}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg">
+            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white">
               <Zap className="w-12 h-12 text-emerald-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{t.home.features.performance.title}</h3>
               <p className="text-gray-600">{t.home.features.performance.desc}</p>
             </div>
-            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg">
+            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white">
               <Shield className="w-12 h-12 text-emerald-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{t.home.features.zero.title}</h3>
               <p className="text-gray-600">{t.home.features.zero.desc}</p>
             </div>
-            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg">
+            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white">
               <Code2 className="w-12 h-12 text-emerald-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{t.home.features.typesafe.title}</h3>
               <p className="text-gray-600">{t.home.features.typesafe.desc}</p>
             </div>
-            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg">
+            <div className="p-6 border border-gray-200 rounded-lg hover:border-emerald-500 transition-all hover:shadow-lg bg-white">
               <Cpu className="w-12 h-12 text-emerald-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{t.home.features.llm.title}</h3>
               <p className="text-gray-600">{t.home.features.llm.desc}</p>

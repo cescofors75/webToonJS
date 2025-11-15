@@ -36,6 +36,17 @@ export const translations = {
           desc: 'Formato TOON diseñado para uso eficiente de tokens'
         }
       },
+      methods: {
+        title: 'Métodos Más Populares',
+        subtitle: 'Explora los métodos más potentes y utilizados de ToonJS con ejemplos prácticos',
+        viewAll: 'Ver todos los métodos',
+        m1: { desc: 'Filtra y transforma datos en una sola cadena fluida' },
+        m2: { desc: 'Agrupa datos por categoría y calcula estadísticas' },
+        m3: { desc: 'Calcula la correlación entre dos variables numéricas' },
+        m4: { desc: 'Calcula medias móviles para análisis de series temporales' },
+        m5: { desc: 'Encuentra todas las filas que cumplen una condición' },
+        m6: { desc: 'Cuenta frecuencias por categoría automáticamente' }
+      },
       stats: {
         methods: 'Métodos Optimizados',
         tests: 'Tests Pasando',
@@ -196,6 +207,17 @@ export const translations = {
           desc: 'Format TOON dissenyat per ús eficient de tokens'
         }
       },
+      methods: {
+        title: 'Mètodes Més Populars',
+        subtitle: 'Explora els mètodes més potents i utilitzats de ToonJS amb exemples pràctics',
+        viewAll: 'Veure tots els mètodes',
+        m1: { desc: 'Filtra i transforma dades en una sola cadena fluïda' },
+        m2: { desc: 'Agrupa dades per categoria i calcula estadístiques' },
+        m3: { desc: 'Calcula la correlació entre dues variables numèriques' },
+        m4: { desc: 'Calcula mitjanes mòbils per anàlisi de sèries temporals' },
+        m5: { desc: 'Troba totes les files que compleixen una condició' },
+        m6: { desc: 'Compta freqüències per categoria automàticament' }
+      },
       stats: {
         methods: 'Mètodes Optimitzats',
         tests: 'Tests Passant',
@@ -349,12 +371,23 @@ export const translations = {
         },
         typesafe: {
           title: '🎯 Type-Safe',
-          desc: 'Full TypeScript support with comprehensive types'
+          desc: 'Full TypeScript support with type definitions'
         },
         llm: {
           title: '🤖 LLM-Optimized',
           desc: 'TOON format designed for efficient token usage'
         }
+      },
+      methods: {
+        title: 'Most Popular Methods',
+        subtitle: 'Explore the most powerful and widely used ToonJS methods with practical examples',
+        viewAll: 'View all methods',
+        m1: { desc: 'Filter and transform data in a single fluent chain' },
+        m2: { desc: 'Group data by category and calculate statistics' },
+        m3: { desc: 'Calculate correlation between two numeric variables' },
+        m4: { desc: 'Calculate moving averages for time series analysis' },
+        m5: { desc: 'Find all rows matching a condition' },
+        m6: { desc: 'Count frequencies by category automatically' }
       },
       stats: {
         methods: 'Optimized Methods',
@@ -501,20 +534,31 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Haute Performance',
-          desc: 'Jusqu\'à 3x plus rapide avec optimisations style DOOM'
+          desc: 'Jusqu\'\u00e0 3x plus rapide avec optimisations DOOM'
         },
         zero: {
-          title: '📦 Zéro Dépendances',
-          desc: 'TypeScript pur, sans dépendances externes'
+          title: '📦 Zero Dependencies',
+          desc: 'TypeScript pur, sans d\u00e9pendances externes'
         },
         typesafe: {
           title: '🎯 Type-Safe',
-          desc: 'Support complet TypeScript avec définitions'
+          desc: 'Support complet TypeScript avec d\u00e9finitions'
         },
         llm: {
-          title: '🤖 Optimisé pour LLMs',
-          desc: 'Format TOON conçu pour usage efficace des tokens'
+          title: '🤖 Optimis\u00e9 pour LLMs',
+          desc: 'Format TOON con\u00e7u pour usage efficace des tokens'
         }
+      },
+      methods: {
+        title: 'M\u00e9thodes Les Plus Populaires',
+        subtitle: 'Explorez les m\u00e9thodes ToonJS les plus puissantes et utilis\u00e9es avec des exemples pratiques',
+        viewAll: 'Voir toutes les m\u00e9thodes',
+        m1: { desc: 'Filtrer et transformer les donn\u00e9es en une seule cha\u00eene fluide' },
+        m2: { desc: 'Grouper les donn\u00e9es par cat\u00e9gorie et calculer des statistiques' },
+        m3: { desc: 'Calculer la corr\u00e9lation entre deux variables num\u00e9riques' },
+        m4: { desc: 'Calculer des moyennes mobiles pour l\'analyse de s\u00e9ries temporelles' },
+        m5: { desc: 'Trouver toutes les lignes correspondant \u00e0 une condition' },
+        m6: { desc: 'Compter automatiquement les fr\u00e9quences par cat\u00e9gorie' }
       },
       stats: {
         methods: 'Méthodes Optimisées',
