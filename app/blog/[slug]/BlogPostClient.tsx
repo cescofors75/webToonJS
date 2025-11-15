@@ -1,7 +1,7 @@
 'use client'
 
 import { useI18n } from '@/components/I18nProvider'
-
+import Link from 'next/link'
 interface BlogPost {
   id: string
   title: {
@@ -44,12 +44,12 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
         />
 
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <a 
+          <Link
             href="/blog" 
             className="text-emerald-600 hover:text-emerald-700 font-medium"
           >
             ← Volver al blog
-          </a>
+          </Link>
         </div>
       </article>
     </div>
