@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          <p>© 2025 ToonJS. {t.footer.rights}. Built by <Link href="https://cesco.dev" className="text-emerald-500 hover:underline">Francesc Fors</Link></p>
+          <p>© 2025 ToonJS. {t.footer.rights}. Built by <Link href="https://cesco.dev" className="text-emerald-500 hover:underline">Cesco Fors</Link></p>
         </div>
       </div>
     </footer>
