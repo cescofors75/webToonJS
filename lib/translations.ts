@@ -11,7 +11,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Hasta 3.5x Más Rápido que Operaciones Manuales',
+      badge: 'Hasta 3.5x Más Rápido · Promedio 2.2x',
       hero: 'Librería TypeScript de Alto Rendimiento',
       subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Hasta 3.5x más rápido.',
       cta: {
@@ -21,7 +21,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Alto Rendimiento',
-          desc: 'Hasta 3x más rápido con optimizaciones estilo DOOM'
+          desc: 'Promedio 2.2x más rápido · Hasta 3.5x en operaciones específicas'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -79,8 +79,15 @@ export const translations = {
         methods: 'Métodos Optimizados',
         tests: 'Tests Pasando',
         faster: 'Más Rápido',
+        fasterNote: 'Promedio en benchmarks',
         downloads: 'Descargas/mes',
         coverage: 'Cobertura'
+      },
+      benchmarks: {
+        title: 'Rendimiento Verificable',
+        subtitle: 'Todos nuestros benchmarks son públicos y reproducibles',
+        viewBenchmarks: 'Ver Benchmarks Completos',
+        note: 'Promedio 2.2x más rápido · Hasta 3.5x en operaciones como correlación y normalización'
       }
     },
     // Footer
@@ -211,7 +218,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Fins a 3.5x Més Ràpid que Operacions Manuals',
+      badge: 'Fins a 3.5x Més Ràpid · Promig 2.2x',
       hero: 'Llibreria TypeScript d\'Alt Rendiment',
       subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Fins a 3.5x més ràpid.',
       cta: {
@@ -221,7 +228,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Alt Rendiment',
-          desc: 'Fins a 3x més ràpid amb optimitzacions estil DOOM'
+          desc: 'Promig 2.2x més ràpid · Fins a 3.5x en operacions específiques'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -279,8 +286,15 @@ export const translations = {
         methods: 'Mètodes Optimitzats',
         tests: 'Tests Passant',
         faster: 'Més Ràpid',
+        fasterNote: 'Promig en benchmarks',
         downloads: 'Descàrregues/mes',
         coverage: 'Cobertura'
+      },
+      benchmarks: {
+        title: 'Rendiment Verificable',
+        subtitle: 'Tots els nostres benchmarks són públics i reproduïbles',
+        viewBenchmarks: 'Veure Benchmarks Complets',
+        note: 'Promig 2.2x més ràpid · Fins a 3.5x en operacions com correlació i normalització'
       }
     },
     // Footer
@@ -411,7 +425,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Up to 3.5x Faster than Manual Operations',
+      badge: 'Up to 3.5x Faster · 2.2x Average',
       hero: 'High-Performance TypeScript Library',
       subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Up to 3.5x faster.',
       cta: {
@@ -421,7 +435,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 High Performance',
-          desc: 'Up to 3x faster with DOOM-style optimizations'
+          desc: '2.2x faster average · Up to 3.5x in specific operations'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -479,8 +493,15 @@ export const translations = {
         methods: 'Optimized Methods',
         tests: 'Tests Passing',
         faster: 'Faster',
+        fasterNote: 'Average in benchmarks',
         downloads: 'Downloads/month',
         coverage: 'Coverage'
+      },
+      benchmarks: {
+        title: 'Verifiable Performance',
+        subtitle: 'All our benchmarks are public and reproducible',
+        viewBenchmarks: 'View Full Benchmarks',
+        note: '2.2x faster average · Up to 3.5x in operations like correlation and normalization'
       }
     },
     // Footer
@@ -611,7 +632,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Jusqu\'à 3.5x Plus Rapide que les Opérations Manuelles',
+      badge: 'Jusqu\'à 3.5x Plus Rapide · Moyenne 2.2x',
       hero: 'Bibliothèque TypeScript Haute Performance',
       subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Jusqu\'à 3.5x plus rapide.',
       cta: {
@@ -621,7 +642,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Haute Performance',
-          desc: 'Jusqu\'\u00e0 3x plus rapide avec optimisations DOOM'
+          desc: 'Moyenne 2.2x plus rapide · Jusqu\'à 3.5x pour opérations spécifiques'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -679,8 +700,15 @@ export const translations = {
         methods: 'Méthodes Optimisées',
         tests: 'Tests Réussis',
         faster: 'Plus Rapide',
+        fasterNote: 'Moyenne des benchmarks',
         downloads: 'Téléchargements/mois',
         coverage: 'Couverture'
+      },
+      benchmarks: {
+        title: 'Performance Vérifiable',
+        subtitle: 'Tous nos benchmarks sont publics et reproductibles',
+        viewBenchmarks: 'Voir Benchmarks Complets',
+        note: 'Moyenne 2.2x plus rapide · Jusqu\'à 3.5x pour opérations comme corrélation et normalisation'
       }
     },
     // Footer

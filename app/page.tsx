@@ -60,12 +60,31 @@ export default function Home() {
               <div className="text-gray-600 dark:text-gray-400">{t.home.stats.coverage}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">3.5x</div>
+              <div className="text-5xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">2.2x</div>
               <div className="text-gray-600 dark:text-gray-400">{t.home.stats.faster}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">{t.home.stats.fasterNote}</div>
             </div>
             <div className="flex flex-col items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
               <NpmDownloads />
               <div className="text-gray-600 dark:text-gray-400 mt-2">{t.home.stats.downloads}</div>
+            </div>
+          </div>
+
+          {/* Benchmarks Note */}
+          <div className="mt-8 max-w-3xl mx-auto">
+            <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                <strong className="text-gray-900 dark:text-gray-100">{t.home.benchmarks.title}:</strong> {t.home.benchmarks.note}
+              </p>
+              <Link
+                href="https://github.com/cescofors75/toonjs#benchmarks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-2 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+              >
+                {t.home.benchmarks.viewBenchmarks}
+                <ArrowRight className="w-3 h-3" />
+              </Link>
             </div>
           </div>
         </div>
