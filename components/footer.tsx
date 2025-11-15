@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Github, Twitter, Linkedin } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 import { useI18n } from './I18nProvider'
 
 export function Footer() {
@@ -46,9 +46,6 @@ export function Footer() {
             <div className="flex space-x-4">
               <Link href="https://github.com/cescofors75" className="hover:text-emerald-500">
                 <Github className="w-5 h-5" />
-              </Link>
-              <Link href="https://twitter.com/cescofors" className="hover:text-emerald-500">
-                <Twitter className="w-5 h-5" />
               </Link>
               <Link href="https://linkedin.com/in/cescofors" className="hover:text-emerald-500">
                 <Linkedin className="w-5 h-5" />

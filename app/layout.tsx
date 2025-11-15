@@ -20,11 +20,6 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'ToonJS - High-Performance Data Manipulation',
-    description: 'TypeScript library for tabular data. 3x faster, zero dependencies.',
-  },
 };
 
 export default function RootLayout({
