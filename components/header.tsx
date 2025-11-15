@@ -11,7 +11,7 @@ export function Header() {
   const { t } = useI18n()
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <header className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
@@ -23,12 +23,12 @@ export function Header() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/docs" className="hover:text-emerald-500 transition-colors">{t.nav.docs}</Link>
-            <Link href="/playground" className="hover:text-emerald-500 transition-colors">{t.nav.playground}</Link>
-            <Link href="/converter" className="hover:text-emerald-500 transition-colors">{t.nav.converter}</Link>
-            <Link href="/blog" className="hover:text-emerald-500 transition-colors">{t.nav.blog}</Link>
+            <Link href="/docs" className="text-gray-900 dark:text-gray-100 hover:text-emerald-500 transition-colors">{t.nav.docs}</Link>
+            <Link href="/playground" className="text-gray-900 dark:text-gray-100 hover:text-emerald-500 transition-colors">{t.nav.playground}</Link>
+            <Link href="/converter" className="text-gray-900 dark:text-gray-100 hover:text-emerald-500 transition-colors">{t.nav.converter}</Link>
+            <Link href="/blog" className="text-gray-900 dark:text-gray-100 hover:text-emerald-500 transition-colors">{t.nav.blog}</Link>
             <Link href="https://github.com/cescofors75/toonjs" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5 hover:text-emerald-500 transition-colors" />
+              <Github className="w-5 h-5 text-gray-900 dark:text-gray-100 hover:text-emerald-500 transition-colors" />
             </Link>
             <LanguageSelector />
             <Link 
@@ -40,8 +40,8 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden"
+          <button
+            className="md:hidden text-gray-900 dark:text-gray-100"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
@@ -51,10 +51,10 @@ export function Header() {
           {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <Link href="/docs" className="block hover:text-emerald-500">{t.nav.docs}</Link>
-            <Link href="/playground" className="block hover:text-emerald-500">{t.nav.playground}</Link>
-            <Link href="/converter" className="block hover:text-emerald-500">{t.nav.converter}</Link>
-            <Link href="/blog" className="block hover:text-emerald-500">{t.nav.blog}</Link>
+            <Link href="/docs" className="block text-gray-900 dark:text-gray-100 hover:text-emerald-500">{t.nav.docs}</Link>
+            <Link href="/playground" className="block text-gray-900 dark:text-gray-100 hover:text-emerald-500">{t.nav.playground}</Link>
+            <Link href="/converter" className="block text-gray-900 dark:text-gray-100 hover:text-emerald-500">{t.nav.converter}</Link>
+            <Link href="/blog" className="block text-gray-900 dark:text-gray-100 hover:text-emerald-500">{t.nav.blog}</Link>
             <div className="py-2">
               <LanguageSelector />
             </div>

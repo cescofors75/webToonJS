@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Editor from '@monaco-editor/react'
+import { useTheme } from 'next-themes'
 import { useI18n } from '@/components/I18nProvider'
 
 // Mock ToonJS implementation for playground
@@ -139,6 +140,8 @@ export default function PlaygroundPage() {
   const [code, setCode] = useState(defaultCode)
   const [output, setOutput] = useState('')
   const { t } = useI18n()
+  const { theme, systemTheme } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme
 
   const runCode = () => {
     try {
@@ -199,8 +202,8 @@ export default function PlaygroundPage() {
 
       <div className="grid lg:grid-cols-2 gap-4">
         {/* Editor */}
-        <div className="border border-gray-200 rounded-lg overflow-hidden">
-          <div className="bg-gray-100 px-4 py-2 border-b border-gray-200 flex justify-between items-center">
+        <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+          <div className="bg-gray-100 dark:bg-gray-800 px-4 py-2 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
             <span className="text-sm font-medium">Code Editor</span>
             <button
               onClick={runCode}
@@ -214,7 +217,7 @@ export default function PlaygroundPage() {
             defaultLanguage="typescript"
             value={code}
             onChange={(value) => setCode(value || '')}
-            theme="vs-dark"
+            theme={currentTheme === 'dark' ? 'vs-dark' : 'light'}
             options={{
               minimap: { enabled: false },
               fontSize: 14,
@@ -226,17 +229,17 @@ export default function PlaygroundPage() {
         </div>
 
         {/* Output */}
-        <div className="border border-gray-200 rounded-lg overflow-hidden">
-          <div className="bg-gray-100 px-4 py-2 border-b border-gray-200">
+        <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+          <div className="bg-gray-100 dark:bg-gray-800 px-4 py-2 border-b border-gray-200 dark:border-gray-700">
             <span className="text-sm font-medium">{t.playground.output}</span>
           </div>
-          <pre className="h-[500px] overflow-auto p-4 bg-gray-900 text-gray-100 text-sm font-mono">
+          <pre className="h-[500px] overflow-auto p-4 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-sm font-mono">
             {output || `// ${t.playground.run}...`}
           </pre>
         </div>
       </div>
 
-      <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+      <div className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
         <p className="text-sm">
           <strong>💡 Note:</strong> This playground is for demonstration. For full functionality, 
           install ToonJS locally: <code className="bg-gray-100 px-2 py-1 rounded">npm install @cescofors/toonjs</code>
