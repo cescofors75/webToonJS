@@ -25,6 +25,25 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'v104-new-methods',
+    title: {
+      es: 'ToonJS v1.0.4: 4 Nuevos Métodos Potentes',
+      ca: 'ToonJS v1.0.4: 4 Nous Mètodes Potents',
+      en: 'ToonJS v1.0.4: 4 Powerful New Methods',
+      fr: 'ToonJS v1.0.4: 4 Nouvelles Méthodes Puissantes'
+    },
+    description: {
+      es: 'Descubre los 4 nuevos métodos añadidos en v1.0.4: findAll(), countBy(), getName() y setName(). ToonJS ahora tiene 64 métodos optimizados.',
+      ca: 'Descobreix els 4 nous mètodes afegits a la v1.0.4: findAll(), countBy(), getName() i setName(). ToonJS ara té 64 mètodes optimitzats.',
+      en: 'Discover the 4 new methods added in v1.0.4: findAll(), countBy(), getName(), and setName(). ToonJS now has 64 optimized methods.',
+      fr: 'Découvrez les 4 nouvelles méthodes ajoutées dans v1.0.4: findAll(), countBy(), getName() et setName(). ToonJS a maintenant 64 méthodes optimisées.'
+    },
+    date: '2025-11-15',
+    author: 'Francesc Fors',
+    readTime: '6',
+    tags: ['announcement', 'release', 'features']
+  },
+  {
     id: 'introducing-toonjs',
     title: {
       es: 'Presentando ToonJS',

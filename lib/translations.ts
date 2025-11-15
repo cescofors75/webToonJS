@@ -81,7 +81,7 @@ export const translations = {
         nextStepsLink: 'Comenzar',
         nextStepsEnd: 'para aprender a usar ToonJS en tu proyecto.',
         features: {
-          f1: '60+ métodos optimizados para manipulación de datos',
+          f1: '64+ métodos optimizados para manipulación de datos',
           f2: 'API encadenable para pipelines de datos elegantes',
           f3: 'Operaciones estadísticas (correlación, covarianza, etc.)',
           f4: 'Análisis de series temporales (rolling, lag, lead)',
@@ -118,6 +118,7 @@ export const translations = {
         transformation: 'Transformación de Datos',
         matrix: 'Operaciones Matriciales',
         export: 'Exportación de Datos',
+        utilities: 'Utilidades',
         methodName: 'Nombre',
         methodDesc: 'Descripción',
         methodReturn: 'Retorna'
@@ -239,7 +240,7 @@ export const translations = {
         nextStepsLink: 'Començar',
         nextStepsEnd: 'per aprendre a usar ToonJS al teu projecte.',
         features: {
-          f1: '60+ mètodes optimitzats per manipulació de dades',
+          f1: '64+ mètodes optimitzats per manipulació de dades',
           f2: 'API encadenable per pipelines de dades elegants',
           f3: 'Operacions estadístiques (correlació, covariància, etc.)',
           f4: 'Anàlisi de sèries temporals (rolling, lag, lead)',
@@ -269,13 +270,14 @@ export const translations = {
       apiReference: {
         title: 'Referència d\'API',
         subtitle: 'Documentació completa de tots els mètodes de ToonJS',
-        filtering: 'Mètodes de Filtratge',
+        filtering: 'Mètodes de Filtrat',
         selection: 'Selecció de Dades',
         statistics: 'Operacions Estadístiques',
         timeSeries: 'Anàlisi de Sèries Temporals',
         transformation: 'Transformació de Dades',
         matrix: 'Operacions Matricials',
         export: 'Exportació de Dades',
+        utilities: 'Utilitats',
         methodName: 'Nom',
         methodDesc: 'Descripció',
         methodReturn: 'Retorna'
@@ -397,7 +399,7 @@ export const translations = {
         nextStepsLink: 'Getting Started',
         nextStepsEnd: 'guide to learn how to use ToonJS in your project.',
         features: {
-          f1: '60+ optimized methods for data manipulation',
+          f1: '64+ optimized methods for data manipulation',
           f2: 'Chainable API for elegant data pipelines',
           f3: 'Statistical operations (correlation, covariance, etc.)',
           f4: 'Time series analysis (rolling, lag, lead)',
@@ -434,6 +436,7 @@ export const translations = {
         transformation: 'Data Transformation',
         matrix: 'Matrix Operations',
         export: 'Data Export',
+        utilities: 'Utilities',
         methodName: 'Name',
         methodDesc: 'Description',
         methodReturn: 'Returns'
@@ -555,7 +558,7 @@ export const translations = {
         nextStepsLink: 'Commencer',
         nextStepsEnd: 'pour apprendre à utiliser ToonJS dans votre projet.',
         features: {
-          f1: '60+ méthodes optimisées pour la manipulation de données',
+          f1: '64+ méthodes optimisées pour la manipulation de données',
           f2: 'API chaînable pour des pipelines de données élégants',
           f3: 'Opérations statistiques (corrélation, covariance, etc.)',
           f4: 'Analyse de séries temporelles (rolling, lag, lead)',
@@ -592,6 +595,7 @@ export const translations = {
         transformation: 'Transformation de Données',
         matrix: 'Opérations Matricielles',
         export: 'Exportation de Données',
+        utilities: 'Utilitaires',
         methodName: 'Nom',
         methodDesc: 'Description',
         methodReturn: 'Retourne'

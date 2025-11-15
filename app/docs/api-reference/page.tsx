@@ -10,6 +10,7 @@ export default function ApiReferencePage() {
       { name: 'filter', desc: { es: 'Filtra filas basadas en una condición', ca: 'Filtra files basades en una condició', en: 'Filter rows based on a condition', fr: 'Filtrer les lignes selon une condition' }, returns: 'Toon' },
       { name: 'where', desc: { es: 'Filtra por condiciones múltiples', ca: 'Filtra per condicions múltiples', en: 'Filter by multiple conditions', fr: 'Filtrer par plusieurs conditions' }, returns: 'Toon' },
       { name: 'find', desc: { es: 'Encuentra la primera fila que cumple la condición', ca: 'Troba la primera fila que compleix la condició', en: 'Find the first row matching condition', fr: 'Trouve la première ligne correspondante' }, returns: 'Row | undefined' },
+      { name: 'findAll', desc: { es: 'Encuentra todas las filas que cumplen la condición', ca: 'Troba totes les files que compleixen la condició', en: 'Find all rows matching condition', fr: 'Trouve toutes les lignes correspondantes' }, returns: 'Row[]' },
       { name: 'unique', desc: { es: 'Obtiene valores únicos de una columna', ca: 'Obté valors únics d\'una columna', en: 'Get unique values from a column', fr: 'Obtenir les valeurs uniques d\'une colonne' }, returns: 'any[]' },
       { name: 'distinct', desc: { es: 'Elimina filas duplicadas', ca: 'Elimina files duplicades', en: 'Remove duplicate rows', fr: 'Supprimer les lignes dupliquées' }, returns: 'Toon' },
     ],
@@ -31,6 +32,7 @@ export default function ApiReferencePage() {
       { name: 'min', desc: { es: 'Valor mínimo de una columna', ca: 'Valor mínim d\'una columna', en: 'Minimum value of a column', fr: 'Valeur minimale d\'une colonne' }, returns: 'number' },
       { name: 'max', desc: { es: 'Valor máximo de una columna', ca: 'Valor màxim d\'una columna', en: 'Maximum value of a column', fr: 'Valeur maximale d\'une colonne' }, returns: 'number' },
       { name: 'count', desc: { es: 'Cuenta las filas', ca: 'Compta les files', en: 'Count rows', fr: 'Compter les lignes' }, returns: 'number' },
+      { name: 'countBy', desc: { es: 'Cuenta frecuencias por categoría', ca: 'Compta freqüències per categoria', en: 'Count frequencies by category', fr: 'Compter les fréquences par catégorie' }, returns: 'Record<string, number>' },
       { name: 'stats', desc: { es: 'Estadísticas completas (min, max, avg, sum, count, median)', ca: 'Estadístiques completes', en: 'Complete statistics', fr: 'Statistiques complètes' }, returns: 'Stats' },
       { name: 'variance', desc: { es: 'Varianza de una columna', ca: 'Variància d\'una columna', en: 'Variance of a column', fr: 'Variance d\'une colonne' }, returns: 'number' },
       { name: 'stdDev', desc: { es: 'Desviación estándar', ca: 'Desviació estàndard', en: 'Standard deviation', fr: 'Écart type' }, returns: 'number' },
@@ -75,6 +77,10 @@ export default function ApiReferencePage() {
       { name: 'toToon', desc: { es: 'Exporta a formato TOON', ca: 'Exporta a format TOON', en: 'Export to TOON format', fr: 'Exporter au format TOON' }, returns: 'string' },
       { name: 'toTable', desc: { es: 'Muestra como tabla ASCII', ca: 'Mostra com taula ASCII', en: 'Display as ASCII table', fr: 'Afficher en tableau ASCII' }, returns: 'string' },
       { name: 'toMarkdown', desc: { es: 'Exporta a tabla Markdown', ca: 'Exporta a taula Markdown', en: 'Export to Markdown table', fr: 'Exporter en tableau Markdown' }, returns: 'string' },
+    ],
+    utilities: [
+      { name: 'getName', desc: { es: 'Obtiene el nombre del dataset', ca: 'Obté el nom del dataset', en: 'Get dataset name', fr: 'Obtenir le nom du dataset' }, returns: 'string' },
+      { name: 'setName', desc: { es: 'Establece el nombre del dataset', ca: 'Estableix el nom del dataset', en: 'Set dataset name', fr: 'Définir le nom du dataset' }, returns: 'Toon' },
     ],
   }
 
@@ -250,6 +256,31 @@ export default function ApiReferencePage() {
             </thead>
             <tbody>
               {methods.export.map((method, idx) => (
+                <tr key={idx} className="hover:bg-gray-50">
+                  <td className="px-4 py-2 border-b font-mono text-sm text-emerald-600">{method.name}</td>
+                  <td className="px-4 py-2 border-b">{method.desc[language]}</td>
+                  <td className="px-4 py-2 border-b font-mono text-sm">{method.returns}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Utility Methods */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4 text-emerald-600">{t.docs.apiReference.utilities}</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-gray-300">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="px-4 py-2 border-b text-left">{t.docs.apiReference.methodName}</th>
+                <th className="px-4 py-2 border-b text-left">{t.docs.apiReference.methodDesc}</th>
+                <th className="px-4 py-2 border-b text-left">{t.docs.apiReference.methodReturn}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {methods.utilities.map((method, idx) => (
                 <tr key={idx} className="hover:bg-gray-50">
                   <td className="px-4 py-2 border-b font-mono text-sm text-emerald-600">{method.name}</td>
                   <td className="px-4 py-2 border-b">{method.desc[language]}</td>

@@ -1,8 +1,10 @@
 import { introducingToonjs } from './introducing-toonjs'
 import { tokenSavings } from './50-percent-token-savings'
+import { v104NewMethods } from './v104-new-methods'
 
 // Simplified content for remaining posts
 export const allBlogPosts = {
+  'v104-new-methods': v104NewMethods,
   'introducing-toonjs': introducingToonjs,
   '50-percent-token-savings': tokenSavings,
   'doom-optimization-techniques': {
