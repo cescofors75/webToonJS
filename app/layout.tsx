@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { I18nProvider } from '@/components/I18nProvider'
-
+import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -38,6 +38,7 @@ export default function RootLayout({
         <I18nProvider>
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </I18nProvider>
       </body>
