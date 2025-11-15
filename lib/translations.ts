@@ -39,7 +39,8 @@ export const translations = {
       stats: {
         methods: 'Métodos Optimizados',
         tests: 'Tests Pasando',
-        faster: 'Más Rápido'
+        faster: 'Más Rápido',
+        downloads: 'Descargas/mes'
       }
     },
     // Footer
@@ -198,7 +199,8 @@ export const translations = {
       stats: {
         methods: 'Mètodes Optimitzats',
         tests: 'Tests Passant',
-        faster: 'Més Ràpid'
+        faster: 'Més Ràpid',
+        downloads: 'Descàrregues/mes'
       }
     },
     // Footer
@@ -357,7 +359,8 @@ export const translations = {
       stats: {
         methods: 'Optimized Methods',
         tests: 'Tests Passing',
-        faster: 'Faster'
+        faster: 'Faster',
+        downloads: 'Downloads/month'
       }
     },
     // Footer
@@ -516,7 +519,8 @@ export const translations = {
       stats: {
         methods: 'Méthodes Optimisées',
         tests: 'Tests Réussis',
-        faster: 'Plus Rapide'
+        faster: 'Plus Rapide',
+        downloads: 'Téléchargements/mois'
       }
     },
     // Footer
