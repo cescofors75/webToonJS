@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description: 'TypeScript library for tabular data manipulation. Average 2.2x faster. Zero dependencies. Perfect for LLMs and data analysis.',
   keywords: ['toonjs', 'data', 'javascript', 'typescript', 'pandas', 'llm', 'dataframe', 'analysis'],
   authors: [{ name: 'Francesc Fors', url: 'https://cesco.dev' }],
+  icons: {
+    icon: '/icon.svg',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: 'ToonJS - High-Performance Data Manipulation',
     description: 'TypeScript library for tabular data. 2.2x average faster, zero dependencies.',
