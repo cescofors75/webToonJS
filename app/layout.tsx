@@ -4,7 +4,6 @@ import "./globals.css";
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { I18nProvider } from '@/components/I18nProvider'
-import { ThemeProvider } from '@/components/ThemeProvider'
 import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,16 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={`${inter.className} bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <I18nProvider>
-            <Header />
-            {children}
-            <Analytics />
-            <Footer />
-          </I18nProvider>
-        </ThemeProvider>
+    <html lang="es">
+      <body className={`${inter.className} bg-white text-gray-900`}>
+        <I18nProvider>
+          <Header />
+          {children}
+          <Analytics />
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

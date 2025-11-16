@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { Github, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { LanguageSelector } from './LanguageSelector'
-import { ThemeToggle } from './ThemeToggle'
 import { useI18n } from './I18nProvider'
 
 export function Header() {
@@ -31,7 +30,6 @@ export function Header() {
             <Link href="https://github.com/cescofors75/toonjs" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 hover:text-emerald-500 transition-colors" />
             </Link>
-            <ThemeToggle />
             <LanguageSelector />
             <Link 
               href="/docs/getting-started"
@@ -58,7 +56,6 @@ export function Header() {
             <Link href="/converter" className="block hover:text-emerald-500">{t.nav.converter}</Link>
             <Link href="/blog" className="block hover:text-emerald-500">{t.nav.blog}</Link>
             <div className="flex items-center gap-2">
-              <ThemeToggle />
               <LanguageSelector />
             </div>
             <Link 

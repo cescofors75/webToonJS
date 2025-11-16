@@ -1,9 +1,15 @@
 @import "tailwindcss";
 
+/* Tema verde esmeralda personalizado */
 @theme {
-  --color-*: initial;
-  --font-*: initial;
-  --breakpoint-*: initial;
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-primary-light: #34d399;
+  
+  /* Configuración de breakpoints y espaciado por defecto */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
-
-@variant dark (&:is(.dark *));
