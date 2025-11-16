@@ -30,13 +30,13 @@ export function CodeExample() {
   }
 
   return (
-    <section className="py-20 px-6 bg-gray-50 dark:bg-gray-900/50">
+    <section className="py-20 px-6 bg-gray-50">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Simple & Powerful
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400">
+          <p className="text-xl text-gray-600">
             Clean syntax, powerful results
           </p>
         </div>

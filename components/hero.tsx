@@ -20,13 +20,13 @@ export function Hero() {
               ToonJS
             </span>
             <br />
-            <span className="text-gray-900 dark:text-white">
+            <span className="text-gray-900">
               Pandas for JavaScript
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             High-performance TypeScript library for tabular data manipulation.
             Average <span className="text-emerald-500 font-semibold">2.2x faster</span>. Zero dependencies. 
             Perfect for <span className="text-emerald-500 font-semibold">LLMs</span> and data analysis.
@@ -43,7 +43,7 @@ export function Hero() {
             </Link>
             <Link
               href="/playground"
-              className="px-8 py-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg font-semibold hover:border-emerald-500 transition-colors flex items-center space-x-2"
+              className="px-8 py-4 border-2 border-gray-300 rounded-lg font-semibold hover:border-emerald-500 transition-colors flex items-center space-x-2"
             >
               <Code2 className="w-5 h-5" />
               <span>Try Playground</span>
@@ -52,7 +52,7 @@ export function Hero() {
 
           {/* Install Command */}
           <div className="pt-8">
-            <div className="inline-block bg-gray-100 dark:bg-gray-900 rounded-lg px-6 py-4 font-mono text-sm border border-gray-200 dark:border-gray-800">
+            <div className="inline-block bg-gray-100 rounded-lg px-6 py-4 font-mono text-sm border border-gray-200">
               <span className="text-gray-500">$</span> npm install <span className="text-emerald-500">@cescofors/toonjs</span>
             </div>
           </div>

@@ -43,7 +43,7 @@ export function Features() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Everything you need
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Built for performance, designed for developers
           </p>
         </div>
@@ -52,11 +52,11 @@ export function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-emerald-500 transition-colors group"
+              className="p-6 rounded-xl border border-gray-200 hover:border-emerald-500 transition-colors group"
             >
               <feature.icon className="w-12 h-12 text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>

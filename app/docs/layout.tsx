@@ -30,7 +30,7 @@ export default function DocsLayout({
           <nav className="sticky top-24 space-y-6">
             {sidebarItems.map((section) => (
               <div key={section.title}>
-                <h4 className="font-semibold text-sm text-gray-900 dark:text-white mb-2">
+                <h4 className="font-semibold text-sm text-gray-900 mb-2">
                   {section.title}
                 </h4>
                 <ul className="space-y-1">
@@ -38,7 +38,7 @@ export default function DocsLayout({
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 block py-1"
+                        className="text-sm text-gray-600 hover:text-emerald-600 block py-1"
                       >
                         {item.title}
                       </Link>
@@ -52,7 +52,7 @@ export default function DocsLayout({
 
         {/* Content */}
         <main className="flex-1 max-w-3xl">
-          <div className="prose prose-slate dark:prose-invert max-w-none">
+          <div className="prose prose-slate max-w-none">
             {children}
           </div>
         </main>
