@@ -21,7 +21,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Alto Rendimiento',
-          desc: 'Hasta 3x más rápido con optimizaciones estilo DOOM'
+          desc: 'Promedio 2.2x más rápido, hasta 3.5x en operaciones complejas'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -192,7 +192,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Alt Rendiment',
-          desc: 'Fins a 3x més ràpid amb optimitzacions estil DOOM'
+          desc: 'Promig 2.2x més ràpid, fins a 3.5x en operacions complexes'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -363,7 +363,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 High Performance',
-          desc: 'Up to 3x faster with DOOM-style optimizations'
+          desc: 'Average 2.2x faster, up to 3.5x in complex operations'
         },
         zero: {
           title: '📦 Zero Dependencies',
@@ -534,7 +534,7 @@ export const translations = {
       features: {
         performance: {
           title: '🚀 Haute Performance',
-          desc: 'Jusqu\'\u00e0 3x plus rapide avec optimisations DOOM'
+          desc: 'Moyenne 2.2x plus rapide, jusqu\'\u00e0 3.5x dans les opérations complexes'
         },
         zero: {
           title: '📦 Zero Dependencies',

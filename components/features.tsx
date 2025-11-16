@@ -6,7 +6,7 @@ const features = [
   {
     icon: Zap,
     title: 'Blazing Fast',
-    description: 'Average 2.2x faster than manual operations, up to 3.5x with DOOM-style optimizations'
+    description: 'Average 2.2x faster than manual operations, up to 3.5x in complex operations'
   },
   {
     icon: Code,
