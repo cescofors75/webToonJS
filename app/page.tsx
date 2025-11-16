@@ -48,16 +48,17 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-emerald-600 mb-2">64+</div>
+              <div className="text-5xl font-bold text-emerald-600 mb-2">76</div>
               <div className="text-gray-600">{t.home.stats.methods}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-emerald-600 mb-2">75</div>
+              <div className="text-5xl font-bold text-emerald-600 mb-2">102</div>
               <div className="text-gray-600">{t.home.stats.tests}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-emerald-600 mb-2">3x</div>
+              <div className="text-5xl font-bold text-emerald-600 mb-2">2.2x</div>
               <div className="text-gray-600">{t.home.stats.faster}</div>
+              <div className="text-sm text-gray-500 mt-1">Promedio en benchmarks</div>
             </div>
             <div className="flex flex-col items-center justify-center">
               <NpmDownloads />

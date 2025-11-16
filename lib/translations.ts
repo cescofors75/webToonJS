@@ -11,9 +11,9 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Hasta 3.5x Más Rápido que Operaciones Manuales',
+      badge: 'Rendimiento Verificable: Promedio 2.2x más rápido · Hasta 3.5x en operaciones como correlación y normalización',
       hero: 'Librería TypeScript de Alto Rendimiento',
-      subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Hasta 3x más rápido.',
+      subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Rendimiento verificable en benchmarks.',
       cta: {
         started: 'Comenzar',
         docs: 'Ver Documentación'
@@ -93,13 +93,13 @@ export const translations = {
         nextStepsLink: 'Comenzar',
         nextStepsEnd: 'para aprender a usar ToonJS en tu proyecto.',
         features: {
-          f1: '64+ métodos optimizados para manipulación de datos',
+          f1: '76+ métodos optimizados para manipulación de datos',
           f2: 'API encadenable para pipelines de datos elegantes',
           f3: 'Operaciones estadísticas (correlación, covarianza, etc.)',
           f4: 'Análisis de series temporales (rolling, lag, lead)',
           f5: 'Cálculos de ranking y percentiles',
           f6: 'Operaciones matriciales y transformaciones',
-          f7: '100% cobertura de tests con 75 tests comprehensivos'
+          f7: '100% cobertura de tests con 102 tests comprehensivos'
         }
       },
       gettingStarted: {
@@ -182,9 +182,9 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Fins a 3.5x Més Ràpid que Operacions Manuals',
+      badge: 'Rendiment Verificable: Promig 2.2x més ràpid · Fins a 3.5x en operacions com correlació i normalització',
       hero: 'Llibreria TypeScript d\'Alt Rendiment',
-      subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Fins a 3x més ràpid.',
+      subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Rendiment verificable en benchmarks.',
       cta: {
         started: 'Començar',
         docs: 'Veure Documentació'
@@ -264,13 +264,13 @@ export const translations = {
         nextStepsLink: 'Començar',
         nextStepsEnd: 'per aprendre a usar ToonJS al teu projecte.',
         features: {
-          f1: '64+ mètodes optimitzats per manipulació de dades',
+          f1: '76+ mètodes optimitzats per manipulació de dades',
           f2: 'API encadenable per pipelines de dades elegants',
           f3: 'Operacions estadístiques (correlació, covariància, etc.)',
           f4: 'Anàlisi de sèries temporals (rolling, lag, lead)',
           f5: 'Càlculs de ranking i percentils',
           f6: 'Operacions matricials i transformacions',
-          f7: '100% cobertura de tests amb 75 tests comprehensius'
+          f7: '100% cobertura de tests amb 102 tests comprehensius'
         }
       },
       gettingStarted: {
@@ -353,9 +353,9 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Up to 3.5x Faster than Manual Operations',
+      badge: 'Verifiable Performance: 2.2x Average · Up to 3.5x in operations like correlation and normalization',
       hero: 'High-Performance TypeScript Library',
-      subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Up to 3x faster.',
+      subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Verifiable benchmark performance.',
       cta: {
         started: 'Get Started',
         docs: 'View Documentation'
@@ -435,13 +435,13 @@ export const translations = {
         nextStepsLink: 'Getting Started',
         nextStepsEnd: 'guide to learn how to use ToonJS in your project.',
         features: {
-          f1: '64+ optimized methods for data manipulation',
+          f1: '76+ optimized methods for data manipulation',
           f2: 'Chainable API for elegant data pipelines',
           f3: 'Statistical operations (correlation, covariance, etc.)',
           f4: 'Time series analysis (rolling, lag, lead)',
           f5: 'Ranking and percentile calculations',
           f6: 'Matrix operations and transformations',
-          f7: '100% test coverage with 75 comprehensive tests'
+          f7: '100% test coverage with 102 comprehensive tests'
         }
       },
       gettingStarted: {
@@ -524,9 +524,9 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Jusqu\'à 3.5x Plus Rapide que les Opérations Manuelles',
+      badge: 'Performance Vérifiable: Moyenne 2.2x plus rapide · Jusqu\'à 3.5x dans des opérations comme corrélation et normalisation',
       hero: 'Bibliothèque TypeScript Haute Performance',
-      subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Jusqu\'à 3x plus rapide.',
+      subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Performance vérifiable en benchmarks.',
       cta: {
         started: 'Commencer',
         docs: 'Voir la Documentation'
@@ -606,13 +606,13 @@ export const translations = {
         nextStepsLink: 'Commencer',
         nextStepsEnd: 'pour apprendre à utiliser ToonJS dans votre projet.',
         features: {
-          f1: '64+ méthodes optimisées pour la manipulation de données',
+          f1: '76+ méthodes optimisées pour la manipulation de données',
           f2: 'API chaînable pour des pipelines de données élégants',
           f3: 'Opérations statistiques (corrélation, covariance, etc.)',
           f4: 'Analyse de séries temporelles (rolling, lag, lead)',
           f5: 'Calculs de classement et percentiles',
           f6: 'Opérations matricielles et transformations',
-          f7: '100% de couverture de tests avec 75 tests complets'
+          f7: '100% de couverture de tests avec 102 tests complets'
         }
       },
       gettingStarted: {

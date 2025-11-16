@@ -90,10 +90,10 @@ const blogPosts: BlogPost[] = [
       fr: 'Optimisations Style DOOM en JavaScript'
     },
     description: {
-      es: 'Aprende cómo las técnicas clásicas de motores de juegos hacen ToonJS hasta 3x más rápido que operaciones manuales.',
-      ca: 'Aprèn com les tècniques clàssiques de motors de jocs fan ToonJS fins a 3x més ràpid que operacions manuals.',
-      en: 'Learn how classic game engine techniques make ToonJS up to 3x faster than manual operations.',
-      fr: 'Découvrez comment les techniques classiques des moteurs de jeu rendent ToonJS jusqu\'à 3x plus rapide.'
+      es: 'Aprende cómo las técnicas clásicas de motores de juegos hacen ToonJS un promedio de 2.2x más rápido, hasta 3.5x en operaciones como correlación.',
+      ca: 'Aprèn com les tècniques clàssiques de motors de jocs fan ToonJS un promig de 2.2x més ràpid, fins a 3.5x en operacions com correlació.',
+      en: 'Learn how classic game engine techniques make ToonJS average 2.2x faster, up to 3.5x in operations like correlation.',
+      fr: 'Découvrez comment les techniques classiques des moteurs de jeu rendent ToonJS 2.2x plus rapide en moyenne, jusqu\'à 3.5x dans des opérations comme la corrélation.'
     },
     date: '2025-11-09',
     author: 'Cesco Fors',

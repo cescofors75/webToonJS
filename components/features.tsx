@@ -6,7 +6,7 @@ const features = [
   {
     icon: Zap,
     title: 'Blazing Fast',
-    description: 'Up to 3x faster than manual operations with DOOM-style optimizations'
+    description: 'Average 2.2x faster than manual operations, up to 3.5x with DOOM-style optimizations'
   },
   {
     icon: Code,
@@ -15,7 +15,7 @@ const features = [
   },
   {
     icon: BarChart,
-    title: '60+ Methods',
+    title: '76 Methods',
     description: 'Complete API for filtering, aggregation, statistics, and more'
   },
   {

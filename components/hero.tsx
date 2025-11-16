@@ -28,7 +28,7 @@ export function Hero() {
           {/* Description */}
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             High-performance TypeScript library for tabular data manipulation.
-            Up to <span className="text-emerald-500 font-semibold">3x faster</span>. Zero dependencies. 
+            Average <span className="text-emerald-500 font-semibold">2.2x faster</span>. Zero dependencies. 
             Perfect for <span className="text-emerald-500 font-semibold">LLMs</span> and data analysis.
           </p>
 
