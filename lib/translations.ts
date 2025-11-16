@@ -11,7 +11,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Rendimiento Verificable: Promedio 2.2x más rápido · Hasta 3.5x en operaciones como correlación y normalización',
+      badge: 'Promedio 2.2x más rápido · Hasta 3.5x en operaciones como correlación y normalización',
       hero: 'Librería TypeScript de Alto Rendimiento',
       subtitle: 'Manipulación de datos tabulares optimizada para JavaScript, TypeScript y LLMs. Rendimiento verificable en benchmarks.',
       cta: {
@@ -182,7 +182,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Rendiment Verificable: Promig 2.2x més ràpid · Fins a 3.5x en operacions com correlació i normalització',
+      badge: 'Promig 2.2x més ràpid · Fins a 3.5x en operacions com correlació i normalització',
       hero: 'Llibreria TypeScript d\'Alt Rendiment',
       subtitle: 'Manipulació de dades tabulars optimitzada per JavaScript, TypeScript i LLMs. Rendiment verificable en benchmarks.',
       cta: {
@@ -353,7 +353,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Verifiable Performance: 2.2x Average · Up to 3.5x in operations like correlation and normalization',
+      badge: '2.2x Average · Up to 3.5x in operations like correlation and normalization',
       hero: 'High-Performance TypeScript Library',
       subtitle: 'Tabular data manipulation optimized for JavaScript, TypeScript, and LLMs. Verifiable benchmark performance.',
       cta: {
@@ -524,7 +524,7 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Performance Vérifiable: Moyenne 2.2x plus rapide · Jusqu\'à 3.5x dans des opérations comme corrélation et normalisation',
+      badge: 'Moyenne 2.2x plus rapide · Jusqu\'à 3.5x dans des opérations comme corrélation et normalisation',
       hero: 'Bibliothèque TypeScript Haute Performance',
       subtitle: 'Manipulation de données tabulaires optimisée pour JavaScript, TypeScript et LLMs. Performance vérifiable en benchmarks.',
       cta: {
