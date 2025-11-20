@@ -185,7 +185,181 @@ const response = await llm.query(toonString);</code></pre>
 
 <p>Estalvia tokens = Estalvia diners = Més dades en menys espai</p>
 
-<p>Prova-ho al nostre <a href="/converter">convertor</a> i veu la diferència per tu mateix.</p>
-`,
+<p>Prova-ho al nostre <a href="/converter">convertor</a> i veu la diferència per tu mateix.</p>`,
+    en: `<h1>50% Token Savings with TOON Format</h1>
+
+<p>One of the biggest challenges when working with LLMs is <strong>token cost</strong>. Every character counts, and traditional tabular data in JSON consumes tokens unnecessarily.</p>
+
+<h2>The Problem with JSON</h2>
+
+<p>Consider this sales data example in JSON:</p>
+
+<pre><code>[
+  {"producto": "Laptop", "precio": 1200, "stock": 45},
+  {"producto": "Mouse", "precio": 25, "stock": 150},
+  {"producto": "Teclado", "precio": 75, "stock": 80}
+]</code></pre>
+
+<p><strong>Tokens</strong>: ~110 tokens</p>
+
+<h2>The TOON Solution</h2>
+
+<p>The same data in TOON format:</p>
+
+<pre><code>productos[3]{producto,precio,stock}:
+  Laptop,1200,45
+  Mouse,25,150
+  Teclado,75,80</code></pre>
+
+<p><strong>Tokens</strong>: ~55 tokens (50% less!)</p>
+
+<h2>Why It Works</h2>
+
+<p>The TOON format eliminates:</p>
+<ul>
+<li>❌ Repeated braces and brackets</li>
+<li>❌ Unnecessary quotes</li>
+<li>❌ Duplicated field names</li>
+<li>❌ Excessive whitespace</li>
+</ul>
+
+<h2>Real Use Cases</h2>
+
+<h3>1. Data Analysis with ChatGPT</h3>
+
+<p>Sending 1000 rows of data:</p>
+<ul>
+<li><strong>JSON</strong>: ~12,000 tokens ($0.024)</li>
+<li><strong>TOON</strong>: ~6,000 tokens ($0.012)</li>
+</ul>
+
+<p><strong>Savings</strong>: 50% on every query</p>
+
+<h3>2. Embeddings with GPT</h3>
+
+<p>To create dataset embeddings:</p>
+<ul>
+<li><strong>JSON</strong>: Limit of ~500 rows</li>
+<li><strong>TOON</strong>: Up to ~1000 rows</li>
+</ul>
+
+<p><strong>Result</strong>: 2x more data per embedding</p>
+
+<h2>Maintaining Readability</h2>
+
+<p>Unlike binary or compressed formats, TOON remains:</p>
+
+<ul>
+<li>✅ Human readable</li>
+<li>✅ Easy to edit</li>
+<li>✅ Simple to parse</li>
+<li>✅ Compatible with LLMs</li>
+</ul>
+
+<h2>Integration with ToonJS</h2>
+
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
+
+// Convert JSON to TOON
+const data = ToonFactory.fromJSON(jsonData);
+const toonString = data.toToon();
+
+// Send to LLM with fewer tokens
+const response = await llm.query(toonString);</code></pre>
+
+<h2>Conclusion</h2>
+
+<p>The TOON format is not just more compact, it's a solution designed specifically for the LLM era.</p>
+
+<p>Save tokens = Save money = More data in less space</p>
+
+<p>Try it in our <a href="/converter">converter</a> and see the difference for yourself.</p>`,
+    fr: `<h1>50% d'Économie de Tokens avec le Format TOON</h1>
+
+<p>L'un des plus grands défis lors du travail avec les LLMs est le <strong>coût des tokens</strong>. Chaque caractère compte, et les données tabulaires traditionnelles en JSON consomment des tokens inutilement.</p>
+
+<h2>Le Problème avec JSON</h2>
+
+<p>Considérez cet exemple de données de vente en JSON :</p>
+
+<pre><code>[
+  {"producto": "Laptop", "precio": 1200, "stock": 45},
+  {"producto": "Mouse", "precio": 25, "stock": 150},
+  {"producto": "Teclado", "precio": 75, "stock": 80}
+]</code></pre>
+
+<p><strong>Tokens</strong>: ~110 tokens</p>
+
+<h2>La Solution TOON</h2>
+
+<p>Les mêmes données au format TOON :</p>
+
+<pre><code>productos[3]{producto,precio,stock}:
+  Laptop,1200,45
+  Mouse,25,150
+  Teclado,75,80</code></pre>
+
+<p><strong>Tokens</strong>: ~55 tokens (50% de moins !)</p>
+
+<h2>Pourquoi Ça Marche</h2>
+
+<p>Le format TOON élimine :</p>
+<ul>
+<li>❌ Accolades et crochets répétés</li>
+<li>❌ Guillemets inutiles</li>
+<li>❌ Noms de champs dupliqués</li>
+<li>❌ Espaces excessifs</li>
+</ul>
+
+<h2>Cas d'Utilisation Réels</h2>
+
+<h3>1. Analyse de Données avec ChatGPT</h3>
+
+<p>Envoi de 1000 lignes de données :</p>
+<ul>
+<li><strong>JSON</strong>: ~12,000 tokens ($0.024)</li>
+<li><strong>TOON</strong>: ~6,000 tokens ($0.012)</li>
+</ul>
+
+<p><strong>Économie</strong>: 50% sur chaque requête</p>
+
+<h3>2. Embeddings avec GPT</h3>
+
+<p>Pour créer des embeddings de datasets :</p>
+<ul>
+<li><strong>JSON</strong>: Limite de ~500 lignes</li>
+<li><strong>TOON</strong>: Jusqu'à ~1000 lignes</li>
+</ul>
+
+<p><strong>Résultat</strong>: 2x plus de données par embedding</p>
+
+<h2>Maintenir la Lisibilité</h2>
+
+<p>Contrairement aux formats binaires ou compressés, TOON reste :</p>
+<ul>
+<li>✅ Lisible par les humains</li>
+<li>✅ Facile à éditer</li>
+<li>✅ Simple à parser</li>
+<li>✅ Compatible avec les LLMs</li>
+</ul>
+
+<h2>Intégration avec ToonJS</h2>
+
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
+
+// Convertir JSON en TOON
+const data = ToonFactory.fromJSON(jsonData);
+const toonString = data.toToon();
+
+// Envoyer au LLM avec moins de tokens
+const response = await llm.query(toonString);</code></pre>
+
+<h2>Conclusion</h2>
+
+<p>Le format TOON n'est pas seulement plus compact, c'est une solution conçue spécifiquement pour l'ère des LLMs.</p>
+
+<p>Économisez des tokens = Économisez de l'argent = Plus de données dans moins d'espace</p>
+
+<p>Essayez-le dans notre <a href="/converter">convertisseur</a> et voyez la différence par vous-même.</p>`
   }
 }
