@@ -16,8 +16,8 @@ export default function NpmDownloads() {
         )
         const data = await response.json()
         setDownloads(data.downloads || 0)
-      } catch (error) {
-        console.error('Error fetching NPM downloads:', error)
+      } catch {
+        // Silently fail in production
         setDownloads(0)
       } finally {
         setLoading(false)

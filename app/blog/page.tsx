@@ -25,6 +25,25 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'v110-release',
+    title: {
+      es: 'ToonJS v1.1: Velocidad Columnar y Robustez',
+      ca: 'ToonJS v1.1: Velocitat Columnar i Robustesa',
+      en: 'ToonJS v1.1: Columnar Speed & Robustness',
+      fr: 'ToonJS v1.1: Vitesse Colonnaire et Robustesse'
+    },
+    description: {
+      es: 'Lanzamiento mayor con arquitectura columnar Float64Array, operaciones matriciales, series temporales y 275+ tests.',
+      ca: 'Llançament major amb arquitectura columnar Float64Array, operacions matricials, sèries temporals i 275+ tests.',
+      en: 'Major release featuring Float64Array columnar architecture, matrix operations, time series, and 275+ tests.',
+      fr: 'Version majeure avec architecture colonnaire Float64Array, opérations matricielles, séries temporelles et 275+ tests.'
+    },
+    date: '2025-11-20',
+    author: 'Francesc Fors',
+    readTime: '8',
+    tags: ['release', 'performance', 'features']
+  },
+  {
     id: 'v104-new-methods',
     title: {
       es: 'ToonJS v1.0.4: 4 Nuevos Métodos Potentes',

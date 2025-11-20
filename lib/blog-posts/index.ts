@@ -1,9 +1,11 @@
 import { introducingToonjs } from './introducing-toonjs'
 import { tokenSavings } from './50-percent-token-savings'
 import { v104NewMethods } from './v104-new-methods'
+import { v110Release } from './v110-release'
 
 // Simplified content for remaining posts
 export const allBlogPosts = {
+  'v110-release': v110Release,
   'v104-new-methods': v104NewMethods,
   'introducing-toonjs': introducingToonjs,
   '50-percent-token-savings': tokenSavings,
