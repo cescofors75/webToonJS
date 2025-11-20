@@ -125,62 +125,67 @@ const response = await llm.query(toonString);</code></pre>
 
 <p><strong>Tokens</strong>: ~55 tokens (50% menys!)</p>
 
-<p>Prova-ho al nostre <a href="/converter">conversor</a> i veu la diferència per tu mateix.</p>`,
-    en: `<h1>50% Token Savings with TOON Format</h1>
+<h2>Per Què Funciona</h2>
 
-<p>One of the biggest challenges when working with LLMs is <strong>token cost</strong>. Every character counts, and traditional tabular data in JSON consumes tokens unnecessarily.</p>
+<p>El format TOON elimina:</p>
+<ul>
+<li>❌ Claus i claudàtors repetits</li>
+<li>❌ Cometes innecessàries</li>
+<li>❌ Noms de camps duplicats</li>
+<li>❌ Espais en blanc excessius</li>
+</ul>
 
-<h2>The Problem with JSON</h2>
+<h2>Casos d'Ús Reals</h2>
 
-<p>Consider this example of sales data in JSON:</p>
+<h3>1. Anàlisi de Dades amb ChatGPT</h3>
 
-<pre><code>[
-  {"producto": "Laptop", "precio": 1200, "stock": 45},
-  {"producto": "Mouse", "precio": 25, "stock": 150},
-  {"producto": "Teclado", "precio": 75, "stock": 80}
-]</code></pre>
+<p>Enviant 1000 files de dades:</p>
+<ul>
+<li><strong>JSON</strong>: ~12,000 tokens ($0.024)</li>
+<li><strong>TOON</strong>: ~6,000 tokens ($0.012)</li>
+</ul>
 
-<p><strong>Tokens</strong>: ~110 tokens</p>
+<p><strong>Estalvi</strong>: 50% en cada consulta</p>
 
-<h2>The TOON Solution</h2>
+<h3>2. Embeddings amb GPT</h3>
 
-<p>The same data in TOON format:</p>
+<p>Per crear embeddings de datasets:</p>
+<ul>
+<li><strong>JSON</strong>: Límit de ~500 files</li>
+<li><strong>TOON</strong>: Fins a ~1000 files</li>
+</ul>
 
-<pre><code>productos[3]{producto,precio,stock}:
-  Laptop,1200,45
-  Mouse,25,150
-  Teclado,75,80</code></pre>
+<p><strong>Resultat</strong>: 2x més dades per embedding</p>
 
-<p><strong>Tokens</strong>: ~55 tokens (50% less!)</p>
+<h2>Mantenint la Llegibilitat</h2>
 
-<p>Try it in our <a href="/converter">converter</a> and see the difference for yourself.</p>`,
-    fr: `<h1>50% d'Économie de Tokens avec le Format TOON</h1>
+<p>A diferència de formats binaris o comprimits, TOON segueix sent:</p>
 
-<p>L'un des plus grands défis lors du travail avec les LLMs est le <strong>coût des tokens</strong>. Chaque caractère compte, et les données tabulaires traditionnelles en JSON consomment des tokens inutilement.</p>
+<ul>
+<li>✅ Llegible per humans</li>
+<li>✅ Fàcil d'editar</li>
+<li>✅ Simple de parsejar</li>
+<li>✅ Compatible amb LLMs</li>
+</ul>
 
-<h2>Le Problème avec JSON</h2>
+<h2>Integració amb ToonJS</h2>
 
-<p>Considérez cet exemple de données de ventes en JSON:</p>
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
 
-<pre><code>[
-  {"producto": "Laptop", "precio": 1200, "stock": 45},
-  {"producto": "Mouse", "precio": 25, "stock": 150},
-  {"producto": "Teclado", "precio": 75, "stock": 80}
-]</code></pre>
+// Converteix JSON a TOON
+const data = ToonFactory.fromJSON(jsonData);
+const toonString = data.toToon();
 
-<p><strong>Tokens</strong>: ~110 tokens</p>
+// Envia a LLM amb menys tokens
+const response = await llm.query(toonString);</code></pre>
 
-<h2>La Solution TOON</h2>
+<h2>Conclusió</h2>
 
-<p>Les mêmes données au format TOON:</p>
+<p>El format TOON no és només més compacte, és una solució dissenyada específicament per a l'era dels LLMs.</p>
 
-<pre><code>productos[3]{producto,precio,stock}:
-  Laptop,1200,45
-  Mouse,25,150
-  Teclado,75,80</code></pre>
+<p>Estalvia tokens = Estalvia diners = Més dades en menys espai</p>
 
-<p><strong>Tokens</strong>: ~55 tokens (50% de moins!)</p>
-
-<p>Essayez-le dans notre <a href="/converter">convertisseur</a> et voyez la différence par vous-même.</p>`
+<p>Prova-ho al nostre <a href="/converter">convertor</a> i veu la diferència per tu mateix.</p>
+`,
   }
 }

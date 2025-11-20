@@ -103,7 +103,7 @@ const result = data
 <p>Consulta la <a href="/docs">documentación</a> o pruébalo en el <a href="/playground">playground</a>.</p>
 
 <p>¡Gracias por leer y feliz codificación! 🚀</p>`,
-    ca: `<h1>Presentant ToonJS</h1>
+    ca: \`<h1>Presentant ToonJS</h1>
 
 <p>Estic emocionat d'anunciar <strong>ToonJS</strong> - una llibreria TypeScript d'alt rendiment per a manipulació de dades tabulars, dissenyada específicament per a aplicacions JavaScript modernes i optimitzada per a interaccions amb LLMs.</p>
 
@@ -137,14 +137,66 @@ const result = data
 <li>✅ Compatible amb tots els LLMs principals</li>
 </ul>
 
+<h2>Rendiment</h2>
+
+<p>ToonJS és <strong>ràpid</strong>. Realment ràpid.</p>
+
+<p>A través d'optimitzacions estil DOOM (pre-assignació, càlculs inline, cerques basades en conjunts), aconseguim:</p>
+
+<ul>
+<li><strong>3.5x més ràpid</strong> en càlculs de correlació</li>
+<li><strong>3x més ràpid</strong> en operacions de rànquing</li>
+<li><strong>1.7x més ràpid</strong> en normalització</li>
+<li><strong>2x mitjana</strong> de millora de rendiment</li>
+</ul>
+
+<h2>API Type-Safe</h2>
+
+<p>Cada mètode en ToonJS està completament tipat:</p>
+
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
+
+const data = ToonFactory.from(toonString);
+
+const result = data
+  .filter(r => r.calificacion > 4.5)
+  .sortBy(['calificacion'], ['desc'])
+  .select(['nombre', 'ciudad'])
+  .all();</code></pre>
+
+<h2>Més de 60 Mètodes</h2>
+
+<p>ToonJS inclou tot el que necessites per a anàlisi de dades:</p>
+
+<ul>
+<li><strong>Accés a Dades</strong>: all(), first(), last(), at(), find(), pluck()</li>
+<li><strong>Filtratge</strong>: filter(), filterRange(), search(), distinct()</li>
+<li><strong>Transformació</strong>: map(), select(), exclude(), addField()</li>
+<li><strong>Agregació</strong>: groupBy(), countBy(), aggregate(), stats()</li>
+<li><strong>Estadístiques</strong>: correlation(), covariance(), normalize(), standardize()</li>
+<li><strong>Sèries Temporals</strong>: rolling(), lag(), lead(), diff(), pctChange()</li>
+</ul>
+
+<h2>Zero Dependencies</h2>
+
+<p>ToonJS és TypeScript pur amb <strong>zero dependències en temps d'execució</strong>.</p>
+
+<p>Això significa:</p>
+<ul>
+<li>Bundle més petit</li>
+<li>Sense vulnerabilitats de cadena de subministrament</li>
+<li>Instal·lació més ràpida</li>
+<li>Control complet</li>
+</ul>
+
 <h2>Comença Ara</h2>
 
 <pre><code>npm install @cescofors/toonjs</code></pre>
 
 <p>Consulta la <a href="/docs">documentació</a> o prova-ho al <a href="/playground">playground</a>.</p>
 
-<p>Gràcies per llegir i feliç codificació! 🚀</p>`,
-    en: `<h1>Introducing ToonJS</h1>
+<p>Gràcies per llegir i feliç codificació! 🚀</p>\`,
+    en: \`<h1>Introducing ToonJS</h1>
 
 <p>I'm excited to announce <strong>ToonJS</strong> - a high-performance TypeScript library for tabular data manipulation, designed specifically for modern JavaScript applications and optimized for LLM interactions.</p>
 
@@ -178,14 +230,66 @@ const result = data
 <li>✅ Compatible with all major LLMs</li>
 </ul>
 
+<h2>Performance</h2>
+
+<p>ToonJS is <strong>fast</strong>. Really fast.</p>
+
+<p>Through DOOM-style optimizations (pre-allocation, inline calculations, set-based lookups), we achieve:</p>
+
+<ul>
+<li><strong>3.5x faster</strong> in correlation calculations</li>
+<li><strong>3x faster</strong> in ranking operations</li>
+<li><strong>1.7x faster</strong> in normalization</li>
+<li><strong>2x average</strong> performance improvement</li>
+</ul>
+
+<h2>Type-Safe API</h2>
+
+<p>Every method in ToonJS is fully typed:</p>
+
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
+
+const data = ToonFactory.from(toonString);
+
+const result = data
+  .filter(r => r.calificacion > 4.5)
+  .sortBy(['calificacion'], ['desc'])
+  .select(['nombre', 'ciudad'])
+  .all();</code></pre>
+
+<h2>Over 60 Methods</h2>
+
+<p>ToonJS includes everything you need for data analysis:</p>
+
+<ul>
+<li><strong>Data Access</strong>: all(), first(), last(), at(), find(), pluck()</li>
+<li><strong>Filtering</strong>: filter(), filterRange(), search(), distinct()</li>
+<li><strong>Transformation</strong>: map(), select(), exclude(), addField()</li>
+<li><strong>Aggregation</strong>: groupBy(), countBy(), aggregate(), stats()</li>
+<li><strong>Statistics</strong>: correlation(), covariance(), normalize(), standardize()</li>
+<li><strong>Time Series</strong>: rolling(), lag(), lead(), diff(), pctChange()</li>
+</ul>
+
+<h2>Zero Dependencies</h2>
+
+<p>ToonJS is pure TypeScript with <strong>zero runtime dependencies</strong>.</p>
+
+<p>This means:</p>
+<ul>
+<li>Smaller bundle</li>
+<li>No supply chain vulnerabilities</li>
+<li>Faster installation</li>
+<li>Complete control</li>
+</ul>
+
 <h2>Get Started</h2>
 
 <pre><code>npm install @cescofors/toonjs</code></pre>
 
 <p>Check out the <a href="/docs">documentation</a> or try it in the <a href="/playground">playground</a>.</p>
 
-<p>Thanks for reading, and happy coding! 🚀</p>`,
-    fr: `<h1>Présentation de ToonJS</h1>
+<p>Thanks for reading, and happy coding! 🚀</p>\`,
+    fr: \`<h1>Présentation de ToonJS</h1>
 
 <p>Je suis ravi d'annoncer <strong>ToonJS</strong> - une bibliothèque TypeScript haute performance pour la manipulation de données tabulaires, conçue spécifiquement pour les applications JavaScript modernes et optimisée pour les interactions avec les LLMs.</p>
 
@@ -219,12 +323,64 @@ const result = data
 <li>✅ Compatible avec tous les LLMs majeurs</li>
 </ul>
 
+<h2>Performance</h2>
+
+<p>ToonJS est <strong>rapide</strong>. Vraiment rapide.</p>
+
+<p>Grâce à des optimisations de style DOOM (pré-allocation, calculs en ligne, recherches basées sur des ensembles), nous obtenons:</p>
+
+<ul>
+<li><strong>3.5x plus rapide</strong> dans les calculs de corrélation</li>
+<li><strong>3x plus rapide</strong> dans les opérations de classement</li>
+<li><strong>1.7x plus rapide</strong> dans la normalisation</li>
+<li><strong>2x moyenne</strong> d'amélioration des performances</li>
+</ul>
+
+<h2>API Type-Safe</h2>
+
+<p>Chaque méthode dans ToonJS est entièrement typée:</p>
+
+<pre><code>import { ToonFactory } from '@cescofors/toonjs';
+
+const data = ToonFactory.from(toonString);
+
+const result = data
+  .filter(r => r.calificacion > 4.5)
+  .sortBy(['calificacion'], ['desc'])
+  .select(['nombre', 'ciudad'])
+  .all();</code></pre>
+
+<h2>Plus de 60 Méthodes</h2>
+
+<p>ToonJS inclut tout ce dont vous avez besoin pour l'analyse de données:</p>
+
+<ul>
+<li><strong>Accès aux Données</strong>: all(), first(), last(), at(), find(), pluck()</li>
+<li><strong>Filtrage</strong>: filter(), filterRange(), search(), distinct()</li>
+<li><strong>Transformation</strong>: map(), select(), exclude(), addField()</li>
+<li><strong>Agrégation</strong>: groupBy(), countBy(), aggregate(), stats()</li>
+<li><strong>Statistiques</strong>: correlation(), covariance(), normalize(), standardize()</li>
+<li><strong>Séries Temporelles</strong>: rolling(), lag(), lead(), diff(), pctChange()</li>
+</ul>
+
+<h2>Zéro Dépendance</h2>
+
+<p>ToonJS est du TypeScript pur avec <strong>zéro dépendance d'exécution</strong>.</p>
+
+<p>Cela signifie:</p>
+<ul>
+<li>Bundle plus petit</li>
+<li>Pas de vulnérabilités de la chaîne d'approvisionnement</li>
+<li>Installation plus rapide</li>
+<li>Contrôle complet</li>
+</ul>
+
 <h2>Commencer</h2>
 
 <pre><code>npm install @cescofors/toonjs</code></pre>
 
 <p>Consultez la <a href="/docs">documentation</a> ou essayez-le dans le <a href="/playground">playground</a>.</p>
 
-<p>Merci d'avoir lu, et bon codage! 🚀</p>`
+<p>Merci d'avoir lu, et bon codage! 🚀</p>\`
   }
 }

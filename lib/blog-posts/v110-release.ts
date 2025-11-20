@@ -101,17 +101,17 @@ const percentiles = data.percentile('score'); // p50, p90, etc.</code></pre>
 
 <h2>📊 Nuevas Capacidades</h2>
 
-<p>Hemos añadido más de 25 nuevos métodos para convertir ToonJS en una herramienta seria para ciencia de datos en el navegador o Node.js:</p>
+<p>Hemos añadido más de 25 nuevos métodos para convertir ToonJS en una herramienta seria para la ciencia de datos en el navegador o Node.js:</p>
 
 <h3>1. Análisis de Series Temporales</h3>
 <p>Analiza tendencias sin esfuerzo con funciones de ventana.</p>
 <pre><code>const trends = stockData
   .sortBy({ field: 'date', order: 'asc' })
-  .rolling('close', 7, 'avg')  // media móvil de 7 días
-  .pctChange('close')          // retornos diarios
-  .lag('close', 1);            // valores del día anterior</code></pre>
+  .rolling('close', 7, 'avg')  // Media móvil de 7 días
+  .pctChange('close')          // Retornos diarios
+  .lag('close', 1);            // Valores del día anterior</code></pre>
 
-<h3>2. Operaciones Matriciales y Vectoriales</h3>
+<h3>2. Operaciones de Matrices y Vectores</h3>
 <p>Realiza álgebra lineal directamente en tus data frames.</p>
 <pre><code>const magnitude = data.norm('l2', ['x', 'y', 'z']);
 const dot = vecA.dotProduct(vecB);
@@ -127,12 +127,124 @@ const percentiles = data.percentile('score'); // p50, p90, etc.</code></pre>
 
 <pre><code>npm install @cescofors/toonjs</code></pre>
 
-<p>Revisa la documentación completa y el playground interactivo en <a href="https://toonjs.dev">toonjs.dev</a>.</p>`,
+<p>Consulta la documentación completa y el playground interactivo en <a href="https://toonjs.dev">toonjs.dev</a>.</p>`,
     ca: `<h1>🚀 Anunciant ToonJS v1.1: Velocitat Columnar i Robustesa</h1>
+
 <p>Estem encantats d'anunciar el llançament de <strong>ToonJS v1.1</strong>, una actualització important que transforma la nostra biblioteca de dades tabulars en un motor d'alt rendiment per a l'anàlisi de dades en TypeScript.</p>
-<p>Consulteu la versió en anglès o espanyol per a més detalls.</p>`,
-    fr: `<h1>🚀 Annonce de ToonJS v1.1: Vitesse Colonnaire et Robustesse</h1>
+
+<h2>⚡ La Necessitat de Velocitat: Arquitectura Columnar Float64Array</h2>
+
+<p>El canvi més gran a la v1.1 està sota el capó. Hem refactoritzat el motor d'emmagatzematge principal per utilitzar una <strong>Arquitectura Columnar Híbrida</strong>.</p>
+
+<ul>
+<li><strong>Dades Numèriques</strong>: Emmagatzemades en arrays tipats <code>Float64Array</code>. Això permet al motor JavaScript optimitzar l'ús de memòria i utilitzar instruccions SIMD per a operacions matemàtiques.</li>
+<li><strong>Dades Mixtes</strong>: Emmagatzemades en Arrays estàndard per a flexibilitat.</li>
+</ul>
+
+<p><strong>El Resultat?</strong></p>
+<ul>
+<li><strong>10x Més Ràpid</strong> en agregacions numèriques.</li>
+<li><strong>Zero còpies</strong> en moltes operacions estadístiques.</li>
+<li><strong>Compatibilitat</strong> total cap enrere.</li>
+</ul>
+
+<h2>🛡️ Fiabilitat Provada en Batalla</h2>
+
+<p>El rendiment no significa res sense correcció. Per a la v1.1, no només hem escrit proves; hem dissenyat una fortalesa de proves.</p>
+
+<ul>
+<li><strong>275+ Tests</strong>: Pujant des de 102, cobrint tota la superfície de l'API.</li>
+<li><strong>Suite de Fuzzing</strong>: Ara generem datasets aleatoris (buits, una fila, mides primeres, llavors negatives) per assegurar que ToonJS mai falli en casos límit.</li>
+<li><strong>Verificació d'Invariants</strong>: Verifiquem propietats algebraiques (ex. <code>reverse(reverse(x)) == x</code>) per garantir consistència lògica.</li>
+</ul>
+
+<h2>📊 Noves Capacitats</h2>
+
+<p>Hem afegit més de 25 nous mètodes per convertir ToonJS en una eina seriosa per a la ciència de dades al navegador o Node.js:</p>
+
+<h3>1. Anàlisi de Sèries Temporals</h3>
+<p>Analitza tendències sense esforç amb funcions de finestra.</p>
+<pre><code>const trends = stockData
+  .sortBy({ field: 'date', order: 'asc' })
+  .rolling('close', 7, 'avg')  // Mitjana mòbil de 7 dies
+  .pctChange('close')          // Retorns diaris
+  .lag('close', 1);            // Valors del dia anterior</code></pre>
+
+<h3>2. Operaciones de Matrius i Vectors</h3>
+<p>Realiza àlgebra lineal directament als teus data frames.</p>
+<pre><code>const magnitude = data.norm('l2', ['x', 'y', 'z']);
+const dot = vecA.dotProduct(vecB);
+const standardized = data.standardize(['age', 'income']); // Z-score</code></pre>
+
+<h3>3. Estadístiques Avançades</h3>
+<pre><code>const correlation = data.correlation('gdp', 'life_expectancy');
+const percentiles = data.percentile('score'); // p50, p90, etc.</code></pre>
+
+<h2>📦 Aconsegueix-ho Ara</h2>
+
+<p>ToonJS v1.1 està disponible a NPM avui.</p>
+
+<pre><code>npm install @cescofors/toonjs</code></pre>
+
+<p>Consulta la documentació completa i el playground interactivo a <a href="https://toonjs.dev">toonjs.dev</a>.</p>`,
+    fr: `<h1>🚀 Annonce de ToonJS v1.1 : Vitesse Colonnaire et Robustesse</h1>
+
 <p>Nous sommes ravis d'annoncer la sortie de <strong>ToonJS v1.1</strong>, une mise à jour majeure qui transforme notre bibliothèque de données tabulaires en un moteur haute performance pour l'analyse de données en TypeScript.</p>
-<p>Veuillez consulter la version anglaise ou espagnole pour plus de détails.</p>`
+
+<h2>⚡ Le Besoin de Vitesse : Architecture Colonnaire Float64Array</h2>
+
+<p>Le plus grand changement dans la v1.1 est sous le capot. Nous avons refactorisé le moteur de stockage principal pour utiliser une <strong>Architecture Colonnaire Hybride</strong>.</p>
+
+<ul>
+<li><strong>Données Numériques</strong> : Stockées dans des tableaux typés <code>Float64Array</code>. Cela permet au moteur JavaScript d'optimiser l'utilisation de la mémoire et d'utiliser des instructions SIMD pour les opérations mathématiques.</li>
+<li><strong>Données Mixtes</strong> : Stockées dans des tableaux standard pour la flexibilité.</li>
+</ul>
+
+<p><strong>Le Résultat ?</strong></p>
+<ul>
+<li><strong>10x Plus Rapide</strong> dans les agrégations numériques.</li>
+<li><strong>Zéro copie</strong> dans de nombreuses opérations statistiques.</li>
+<li><strong>Compatibilité</strong> totale avec les versions précédentes.</li>
+</ul>
+
+<h2>🛡️ Fiabilité Éprouvée</h2>
+
+<p>La performance ne signifie rien sans l'exactitude. Pour la v1.1, nous n'avons pas seulement écrit des tests ; nous avons conçu une forteresse de tests.</p>
+
+<ul>
+<li><strong>275+ Tests</strong> : En hausse par rapport à 102, couvrant toute la surface de l'API.</li>
+<li><strong>Suite de Fuzzing</strong> : Nous générons maintenant des jeux de données aléatoires (vides, une ligne, tailles premières, graines négatives) pour garantir que ToonJS ne plante jamais dans les cas limites.</li>
+<li><strong>Vérification d'Invariants</strong> : Nous vérifions les propriétés algébriques (ex. <code>reverse(reverse(x)) == x</code>) pour garantir la cohérence logique.</li>
+</ul>
+
+<h2>📊 Nouvelles Capacités</h2>
+
+<p>Nous avons ajouté plus de 25 nouvelles méthodes pour faire de ToonJS un outil sérieux pour la science des données dans le navigateur ou Node.js :</p>
+
+<h3>1. Analyse de Séries Temporelles</h3>
+<p>Analysez les tendances sans effort avec des fonctions de fenêtre.</p>
+<pre><code>const trends = stockData
+  .sortBy({ field: 'date', order: 'asc' })
+  .rolling('close', 7, 'avg')  // Moyenne mobile sur 7 jours
+  .pctChange('close')          // Rendements quotidiens
+  .lag('close', 1);            // Valeurs du jour précédent</code></pre>
+
+<h3>2. Opérations Matricielles et Vectorielles</h3>
+<p>Effectuez de l'algèbre linéaire directement sur vos data frames.</p>
+<pre><code>const magnitude = data.norm('l2', ['x', 'y', 'z']);
+const dot = vecA.dotProduct(vecB);
+const standardized = data.standardize(['age', 'income']); // Z-score</code></pre>
+
+<h3>3. Statistiques Avancées</h3>
+<pre><code>const correlation = data.correlation('gdp', 'life_expectancy');
+const percentiles = data.percentile('score'); // p50, p90, etc.</code></pre>
+
+<h2>📦 Obtenez-le Maintenant</h2>
+
+<p>ToonJS v1.1 est disponible sur NPM aujourd'hui.</p>
+
+<pre><code>npm install @cescofors/toonjs</code></pre>
+
+<p>Consultez la documentation complète et le playground interactif sur <a href="https://toonjs.dev">toonjs.dev</a>.</p>`
   }
 }

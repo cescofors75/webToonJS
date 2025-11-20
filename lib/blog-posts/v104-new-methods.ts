@@ -163,7 +163,7 @@ const toonStr = normalized.toToon();
 
 <p><strong>¿Qué método nuevo te resulta más útil? Cuéntanos en GitHub!</strong></p>`,
 
-    ca: `<h1>ToonJS v1.0.4: 4 Nous Mètodes Potents</h1>
+    ca: \`<h1>ToonJS v1.0.4: 4 Nous Mètodes Potents</h1>
 
 <p>Ens complau anunciar el llançament de <strong>ToonJS v1.0.4</strong>, que afegeix 4 nous mètodes a la llibreria, portant-nos a un total de <strong>64 mètodes optimitzats</strong> per manipulació de dades.</p>
 
@@ -185,7 +185,17 @@ const toonStr = normalized.toToon();
 // Troba TOTS els productes d'Electrònica
 const electronics = data.findAll(p => p.categoria === 'Electrónica');
 console.log(electronics);
-// Retorna: [Laptop, Mouse, Teclado]</code></pre>
+// Retorna: [Laptop, Mouse, Teclado]
+
+// Alternativa: usar filter().all()
+const sameResult = data.filter(p => p.categoria === 'Electrónica').all();</code></pre>
+
+<p><strong>Quan utilitzar findAll()?</strong></p>
+<ul>
+<li>✅ Quan vols un array directe sense crear un nou Toon</li>
+<li>✅ Per a cerques simples on no necessites encadenar més operacions</li>
+<li>✅ Més eficient que <code>filter().all()</code> per a casos d'ús simples</li>
+</ul>
 
 <h3>2. countBy() - Compta Ocurrències per Valor</h3>
 
@@ -195,35 +205,118 @@ console.log(electronics);
   ventas[8]{producto,ciudad,cantidad}:
     Laptop,Barcelona,2
     Mouse,Madrid,5
-    ...
+    Laptop,Barcelona,1
+    Teclado,Madrid,3
+    Laptop,Madrid,2
+    Mouse,Barcelona,4
+    Laptop,Barcelona,1
+    Teclado,Barcelona,2
 \`);
 
+// Compta quantes vendes hi ha per producte
 const porProducto = ventas.countBy('producto');
-// Output: { Laptop: 4, Mouse: 2, Teclado: 2 }</code></pre>
+console.log(porProducto);
+// Output: {
+//   Laptop: 4,
+//   Mouse: 2,
+//   Teclado: 2
+// }
+
+// Compta vendes per ciutat
+const porCiudad = ventas.countBy('ciudad');
+console.log(porCiudad);
+// Output: {
+//   Barcelona: 5,
+//   Madrid: 3
+// }</code></pre>
+
+<p><strong>Casos d'ús perfectes:</strong></p>
+<ul>
+<li>📊 Anàlisi de distribució de categories</li>
+<li>🎯 Identificar valors més/menys freqüents</li>
+<li>📈 Generar dades per a gràfics de barres</li>
+<li>🔍 Anàlisi de patrons en logs o esdeveniments</li>
+</ul>
 
 <h3>3. getName() - Obté el Nom del Dataset</h3>
 
 <p>Mètode simple però útil per obtenir el nom del dataset actual.</p>
 
-<pre><code>console.log(data.getName()); // "usuarios"</code></pre>
+<pre><code>const data = ToonFactory.from(\`
+  usuarios[3]{nombre,edad}:
+    Ana,25
+    Luis,30
+    María,28
+\`);
+
+console.log(data.getName());
+// Output: "usuarios"
+
+// Útil per a logging i debugging
+console.log(\`Processant dataset: \${data.getName()}\`);
+console.log(\`Total de files: \${data.count()}\`);</code></pre>
 
 <h3>4. setName() - Canvia el Nom del Dataset</h3>
 
-<p>Permet renombrar el dataset, útil en pipelines de transformació.</p>
+<p>Permet renombrar el dataset, útil en pipelines de transformació on vols documentar cada pas.</p>
 
-<pre><code>const normalized = data
-  .filter(r => r.activo)
-  .setName('datos_activos');</code></pre>
+<pre><code>const raw = ToonFactory.from(\`
+  datos[4]{valor,estado}:
+    100,activo
+    200,inactivo
+    150,activo
+    300,activo
+\`);
+
+// Pipeline amb noms descriptius
+const filtered = raw
+  .filter(r => r.estado === 'activo')
+  .setName('datos_activos');
+
+const normalized = filtered
+  .map(r => ({ ...r, valor_norm: r.valor / 100 }))
+  .setName('datos_normalizados');
+
+console.log(filtered.getName());     // "datos_activos"
+console.log(normalized.getName());   // "datos_normalizados"
+
+// Útil en exportar
+const toonStr = normalized.toToon();
+// Inclou el nom "datos_normalizados" en el format TOON</code></pre>
 
 <h2>📈 ToonJS Ara Té 64 Mètodes</h2>
 
-<p>Amb aquests 4 nous mètodes, ToonJS assoleix els <strong>64 mètodes optimitzats</strong>.</p>
+<p>Amb aquests 4 nous mètodes, ToonJS assoleix els <strong>64 mètodes optimitzats</strong>, cobrint:</p>
 
-<p><strong>Actualitza a l'última versió:</strong></p>
+<ul>
+<li>🔍 <strong>Cerca i Filtratge</strong>: find, findAll, findIndex, filter, where, search</li>
+<li>📊 <strong>Agregació</strong>: count, countBy, sum, avg, min, max, stats</li>
+<li>📈 <strong>Estadístiques Avançades</strong>: correlation, covariance, stdDev, variance</li>
+<li>⏱️ <strong>Sèries Temporals</strong>: rolling, lag, lead, diff, pctChange, cumsum</li>
+<li>🔄 <strong>Transformacions</strong>: map, reduce, sortBy, groupBy, pivot, transpose</li>
+<li>🧮 <strong>Operacions Matricials</strong>: toMatrix, fromMatrix, dotProduct, normalize</li>
+<li>💾 <strong>Exportació</strong>: toToon, toCSV, toJSON, toTable, toMarkdown</li>
+<li>🎯 <strong>Utilitats</strong>: getName, setName, clone, distinct, unique</li>
+</ul>
 
-<pre><code>npm install @cescofors/toonjs@latest</code></pre>`,
+<h2>🚀 Instal·lació</h2>
 
-    en: `<h1>ToonJS v1.0.4: 4 Powerful New Methods</h1>
+<p>Actualitza a l'última versió:</p>
+
+<pre><code>npm install @cescofors/toonjs@latest</code></pre>
+
+<h2>🔗 Més Informació</h2>
+
+<ul>
+<li>📚 <a href="/docs/api-reference">Documentació API completa</a></li>
+<li>🎮 <a href="/playground">Prova el Playground</a></li>
+<li>💻 <a href="https://github.com/cescofors75/toonjs">GitHub Repository</a></li>
+<li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">NPM Package</a></li>
+</ul>
+
+<p><strong>Quin nou mètode et resulta més útil? Explica'ns-ho a GitHub!</strong></p>\`,
+
+    en: \`<h1>ToonJS v1.0.4: 4 Powerful New Methods</h1>
 
 <p>We're excited to announce the release of <strong>ToonJS v1.0.4</strong>, which adds 4 new methods to the library, bringing us to a total of <strong>64 optimized methods</strong> for data manipulation.</p>
 
@@ -374,9 +467,9 @@ const toonStr = normalized.toToon();
 <li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">NPM Package</a></li>
 </ul>
 
-<p><strong>Which new method do you find most useful? Let us know on GitHub!</strong></p>`,
+<p><strong>Which new method do you find most useful? Let us know on GitHub!</strong></p>\`,
 
-    fr: `<h1>ToonJS v1.0.4: 4 Nouvelles Méthodes Puissantes</h1>
+    fr: \`<h1>ToonJS v1.0.4: 4 Nouvelles Méthodes Puissantes</h1>
 
 <p>Nous sommes ravis d'annoncer la sortie de <strong>ToonJS v1.0.4</strong>, qui ajoute 4 nouvelles méthodes à la bibliothèque, nous amenant à un total de <strong>64 méthodes optimisées</strong> pour la manipulation de données.</p>
 
@@ -387,42 +480,146 @@ const toonStr = normalized.toToon();
 <p>Contrairement à <code>find()</code> qui retourne seulement la première correspondance, <code>findAll()</code> retourne <strong>toutes les lignes</strong> qui remplissent la condition.</p>
 
 <pre><code>const data = ToonFactory.from(\`
-  products[5]{name,category,price}:
-    Laptop,Electronics,1200
-    Mouse,Electronics,25
-    ...
+  productos[5]{nombre,categoria,precio}:
+    Laptop,Electrónica,1200
+    Mouse,Electrónica,25
+    Teclado,Electrónica,75
+    Silla,Muebles,300
+    Escritorio,Muebles,500
 \`);
 
-const electronics = data.findAll(p => p.category === 'Electronics');
-// Retourne: [Laptop, Mouse, Keyboard]</code></pre>
+// Trouve TOUS les produits d'Électronique
+const electronics = data.findAll(p => p.categoria === 'Electrónica');
+console.log(electronics);
+// Retourne: [Laptop, Mouse, Teclado]
+
+// Alternative: utiliser filter().all()
+const sameResult = data.filter(p => p.categoria === 'Electrónica').all();</code></pre>
+
+<p><strong>Quand utiliser findAll()?</strong></p>
+<ul>
+<li>✅ Quand vous voulez un tableau direct sans créer un nouveau Toon</li>
+<li>✅ Pour des recherches simples où vous n'avez pas besoin d'enchaîner plus d'opérations</li>
+<li>✅ Plus efficace que <code>filter().all()</code> pour des cas d'utilisation simples</li>
+</ul>
 
 <h3>2. countBy() - Compte les Occurrences par Valeur</h3>
 
 <p>Cette méthode est parfaite pour l'analyse de fréquences et les distributions de données.</p>
 
-<pre><code>const byProduct = sales.countBy('product');
-// Output: { Laptop: 4, Mouse: 2, Keyboard: 2 }</code></pre>
+<pre><code>const ventas = ToonFactory.from(\`
+  ventas[8]{producto,ciudad,cantidad}:
+    Laptop,Barcelona,2
+    Mouse,Madrid,5
+    Laptop,Barcelona,1
+    Teclado,Madrid,3
+    Laptop,Madrid,2
+    Mouse,Barcelona,4
+    Laptop,Barcelona,1
+    Teclado,Barcelona,2
+\`);
+
+// Compte combien de ventes il y a par produit
+const porProducto = ventas.countBy('producto');
+console.log(porProducto);
+// Output: {
+//   Laptop: 4,
+//   Mouse: 2,
+//   Teclado: 2
+// }
+
+// Compte les ventes par ville
+const porCiudad = ventas.countBy('ciudad');
+console.log(porCiudad);
+// Output: {
+//   Barcelona: 5,
+//   Madrid: 3
+// }</code></pre>
+
+<p><strong>Cas d'utilisation parfaits :</strong></p>
+<ul>
+<li>📊 Analyse de distribution de catégories</li>
+<li>🎯 Identifier les valeurs les plus/moins fréquentes</li>
+<li>📈 Générer des données pour des graphiques à barres</li>
+<li>🔍 Analyse de modèles dans les logs ou événements</li>
+</ul>
 
 <h3>3. getName() - Obtient le Nom du Dataset</h3>
 
 <p>Méthode simple mais utile pour obtenir le nom du dataset actuel.</p>
 
-<pre><code>console.log(data.getName()); // "users"</code></pre>
+<pre><code>const data = ToonFactory.from(\`
+  usuarios[3]{nombre,edad}:
+    Ana,25
+    Luis,30
+    María,28
+\`);
+
+console.log(data.getName());
+// Output: "usuarios"
+
+// Utile pour le logging et le débogage
+console.log(\`Traitement du dataset: \${data.getName()}\`);
+console.log(\`Total de lignes: \${data.count()}\`);</code></pre>
 
 <h3>4. setName() - Change le Nom du Dataset</h3>
 
-<p>Permet de renommer le dataset, utile dans les pipelines de transformation.</p>
+<p>Permet de renommer le dataset, utile dans les pipelines de transformation où vous voulez documenter chaque étape.</p>
 
-<pre><code>const normalized = data
-  .filter(r => r.active)
-  .setName('active_data');</code></pre>
+<pre><code>const raw = ToonFactory.from(\`
+  datos[4]{valor,estado}:
+    100,activo
+    200,inactivo
+    150,activo
+    300,activo
+\`);
+
+// Pipeline avec des noms descriptifs
+const filtered = raw
+  .filter(r => r.estado === 'activo')
+  .setName('datos_activos');
+
+const normalized = filtered
+  .map(r => ({ ...r, valor_norm: r.valor / 100 }))
+  .setName('datos_normalizados');
+
+console.log(filtered.getName());     // "datos_activos"
+console.log(normalized.getName());   // "datos_normalizados"
+
+// Utile lors de l'exportation
+const toonStr = normalized.toToon();
+// Inclut le nom "datos_normalizados" au format TOON</code></pre>
 
 <h2>📈 ToonJS A Maintenant 64 Méthodes</h2>
 
-<p>Avec ces 4 nouvelles méthodes, ToonJS atteint <strong>64 méthodes optimisées</strong>.</p>
+<p>Avec ces 4 nouvelles méthodes, ToonJS atteint <strong>64 méthodes optimisées</strong>, couvrant :</p>
 
-<p><strong>Mise à jour vers la dernière version:</strong></p>
+<ul>
+<li>🔍 <strong>Recherche et Filtrage</strong>: find, findAll, findIndex, filter, where, search</li>
+<li>📊 <strong>Agrégation</strong>: count, countBy, sum, avg, min, max, stats</li>
+<li>📈 <strong>Statistiques Avancées</strong>: correlation, covariance, stdDev, variance</li>
+<li>⏱️ <strong>Séries Temporelles</strong>: rolling, lag, lead, diff, pctChange, cumsum</li>
+<li>🔄 <strong>Transformations</strong>: map, reduce, sortBy, groupBy, pivot, transpose</li>
+<li>🧮 <strong>Opérations Matricielles</strong>: toMatrix, fromMatrix, dotProduct, normalize</li>
+<li>💾 <strong>Exportation</strong>: toToon, toCSV, toJSON, toTable, toMarkdown</li>
+<li>🎯 <strong>Utilitaires</strong>: getName, setName, clone, distinct, unique</li>
+</ul>
 
-<pre><code>npm install @cescofors/toonjs@latest</code></pre>`
+<h2>🚀 Installation</h2>
+
+<p>Mettez à jour vers la dernière version :</p>
+
+<pre><code>npm install @cescofors/toonjs@latest</code></pre>
+
+<h2>🔗 Plus d'Informations</h2>
+
+<ul>
+<li>📚 <a href="/docs/api-reference">Documentation API complète</a></li>
+<li>🎮 <a href="/playground">Essayez le Playground</a></li>
+<li>💻 <a href="https://github.com/cescofors75/toonjs">Dépôt GitHub</a></li>
+<li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">Paquet NPM</a></li>
+</ul>
+
+<p><strong>Quelle nouvelle méthode trouvez-vous la plus utile ? Dites-le-nous sur GitHub !</strong></p>\`
   }
 }
