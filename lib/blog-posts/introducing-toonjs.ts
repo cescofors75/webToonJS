@@ -103,7 +103,7 @@ const result = data
 <p>Consulta la <a href="/docs">documentación</a> o pruébalo en el <a href="/playground">playground</a>.</p>
 
 <p>¡Gracias por leer y feliz codificación! 🚀</p>`,
-    ca: \`<h1>Presentant ToonJS</h1>
+    ca: `<h1>Presentant ToonJS</h1>
 
 <p>Estic emocionat d'anunciar <strong>ToonJS</strong> - una llibreria TypeScript d'alt rendiment per a manipulació de dades tabulars, dissenyada específicament per a aplicacions JavaScript modernes i optimitzada per a interaccions amb LLMs.</p>
 
@@ -195,8 +195,8 @@ const result = data
 
 <p>Consulta la <a href="/docs">documentació</a> o prova-ho al <a href="/playground">playground</a>.</p>
 
-<p>Gràcies per llegir i feliç codificació! 🚀</p>\`,
-    en: \`<h1>Introducing ToonJS</h1>
+<p>Gràcies per llegir i feliç codificació! 🚀</p>`,
+    en: `<h1>Introducing ToonJS</h1>
 
 <p>I'm excited to announce <strong>ToonJS</strong> - a high-performance TypeScript library for tabular data manipulation, designed specifically for modern JavaScript applications and optimized for LLM interactions.</p>
 
@@ -288,8 +288,8 @@ const result = data
 
 <p>Check out the <a href="/docs">documentation</a> or try it in the <a href="/playground">playground</a>.</p>
 
-<p>Thanks for reading, and happy coding! 🚀</p>\`,
-    fr: \`<h1>Présentation de ToonJS</h1>
+<p>Thanks for reading, and happy coding! 🚀</p>`,
+    fr: `<h1>Présentation de ToonJS</h1>
 
 <p>Je suis ravi d'annoncer <strong>ToonJS</strong> - une bibliothèque TypeScript haute performance pour la manipulation de données tabulaires, conçue spécifiquement pour les applications JavaScript modernes et optimisée pour les interactions avec les LLMs.</p>
 
@@ -381,6 +381,6 @@ const result = data
 
 <p>Consultez la <a href="/docs">documentation</a> ou essayez-le dans le <a href="/playground">playground</a>.</p>
 
-<p>Merci d'avoir lu, et bon codage! 🚀</p>\`
+<p>Merci d'avoir lu, et bon codage! 🚀</p>`
   }
 }

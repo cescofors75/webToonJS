@@ -163,7 +163,7 @@ const toonStr = normalized.toToon();
 
 <p><strong>¿Qué método nuevo te resulta más útil? Cuéntanos en GitHub!</strong></p>`,
 
-    ca: \`<h1>ToonJS v1.0.4: 4 Nous Mètodes Potents</h1>
+    ca: `<h1>ToonJS v1.0.4: 4 Nous Mètodes Potents</h1>
 
 <p>Ens complau anunciar el llançament de <strong>ToonJS v1.0.4</strong>, que afegeix 4 nous mètodes a la llibreria, portant-nos a un total de <strong>64 mètodes optimitzats</strong> per manipulació de dades.</p>
 
@@ -314,9 +314,9 @@ const toonStr = normalized.toToon();
 <li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">NPM Package</a></li>
 </ul>
 
-<p><strong>Quin nou mètode et resulta més útil? Explica'ns-ho a GitHub!</strong></p>\`,
+<p><strong>Quin nou mètode et resulta més útil? Explica'ns-ho a GitHub!</strong></p>`,
 
-    en: \`<h1>ToonJS v1.0.4: 4 Powerful New Methods</h1>
+    en: `<h1>ToonJS v1.0.4: 4 Powerful New Methods</h1>
 
 <p>We're excited to announce the release of <strong>ToonJS v1.0.4</strong>, which adds 4 new methods to the library, bringing us to a total of <strong>64 optimized methods</strong> for data manipulation.</p>
 
@@ -467,9 +467,9 @@ const toonStr = normalized.toToon();
 <li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">NPM Package</a></li>
 </ul>
 
-<p><strong>Which new method do you find most useful? Let us know on GitHub!</strong></p>\`,
+<p><strong>Which new method do you find most useful? Let us know on GitHub!</strong></p>`,
 
-    fr: \`<h1>ToonJS v1.0.4: 4 Nouvelles Méthodes Puissantes</h1>
+    fr: `<h1>ToonJS v1.0.4: 4 Nouvelles Méthodes Puissantes</h1>
 
 <p>Nous sommes ravis d'annoncer la sortie de <strong>ToonJS v1.0.4</strong>, qui ajoute 4 nouvelles méthodes à la bibliothèque, nous amenant à un total de <strong>64 méthodes optimisées</strong> pour la manipulation de données.</p>
 
@@ -620,6 +620,6 @@ const toonStr = normalized.toToon();
 <li>📦 <a href="https://www.npmjs.com/package/@cescofors/toonjs">Paquet NPM</a></li>
 </ul>
 
-<p><strong>Quelle nouvelle méthode trouvez-vous la plus utile ? Dites-le-nous sur GitHub !</strong></p>\`
+<p><strong>Quelle nouvelle méthode trouvez-vous la plus utile ? Dites-le-nous sur GitHub !</strong></p>`
   }
 }
