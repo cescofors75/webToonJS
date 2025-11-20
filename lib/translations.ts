@@ -52,6 +52,10 @@ export const translations = {
         tests: 'Tests Pasando',
         faster: 'Más Rápido',
         downloads: 'Descargas/mes'
+      },
+      wasm: {
+        title: 'Potencia WebAssembly',
+        desc: 'Núcleo escrito en Rust y compilado a WASM para velocidad nativa en operaciones críticas.'
       }
     },
     // Footer
@@ -223,6 +227,10 @@ export const translations = {
         tests: 'Tests Passant',
         faster: 'Més Ràpid',
         downloads: 'Descàrregues/mes'
+      },
+      wasm: {
+        title: 'Potència WebAssembly',
+        desc: 'Nucli escrit en Rust i compilat a WASM per a velocitat nativa en operacions crítiques.'
       }
     },
     // Footer
@@ -394,6 +402,10 @@ export const translations = {
         tests: 'Tests Passing',
         faster: 'Faster',
         downloads: 'Downloads/month'
+      },
+      wasm: {
+        title: 'WebAssembly Power',
+        desc: 'Core written in Rust and compiled to WASM for native speed in critical operations.'
       }
     },
     // Footer
@@ -565,6 +577,10 @@ export const translations = {
         tests: 'Tests Réussis',
         faster: 'Plus Rapide',
         downloads: 'Téléchargements/mois'
+      },
+      wasm: {
+        title: 'Puissance WebAssembly',
+        desc: 'Noyau écrit en Rust et compilé en WASM pour une vitesse native dans les opérations critiques.'
       }
     },
     // Footer
