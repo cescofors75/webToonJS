@@ -55,7 +55,7 @@ export const translations = {
       },
       wasm: {
         title: 'Potencia WebAssembly',
-        desc: 'Núcleo escrito en Rust y compilado a WASM para velocidad nativa en operaciones críticas.'
+        desc: 'Núcleo escrito en AssemblyScript y compilado a WASM para velocidad nativa en operaciones críticas.'
       }
     },
     // Footer
@@ -230,7 +230,7 @@ export const translations = {
       },
       wasm: {
         title: 'Potència WebAssembly',
-        desc: 'Nucli escrit en Rust i compilat a WASM per a velocitat nativa en operacions crítiques.'
+        desc: 'Nucli escrit en AssemblyScript i compilat a WASM per a velocitat nativa en operacions crítiques.'
       }
     },
     // Footer
@@ -405,7 +405,7 @@ export const translations = {
       },
       wasm: {
         title: 'WebAssembly Power',
-        desc: 'Core written in Rust and compiled to WASM for native speed in critical operations.'
+        desc: 'Core written in AssemblyScript and compiled to WASM for native speed in critical operations.'
       }
     },
     // Footer
@@ -580,7 +580,7 @@ export const translations = {
       },
       wasm: {
         title: 'Puissance WebAssembly',
-        desc: 'Noyau écrit en Rust et compilé en WASM pour une vitesse native dans les opérations critiques.'
+        desc: 'Noyau écrit en AssemblyScript et compilé en WASM pour une vitesse native dans les opérations critiques.'
       }
     },
     // Footer

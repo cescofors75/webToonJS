@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-emerald-800 rounded-full border border-emerald-700">
                <span className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
-               <span className="text-sm font-mono text-emerald-200">Rust + WASM</span>
+               <span className="text-sm font-mono text-emerald-200">AssemblyScript + WASM</span>
             </div>
          </div>
       </section>
